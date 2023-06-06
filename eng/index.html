@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>    
+            function toggleMenu() {
+              var menu = document.getElementById("menu");
+              if (menu.style.display === "none") {
+                menu.style.display = "block";
+              } else {
+                menu.style.display = "none";
+              }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Ru") {
+                    window.location.href = "../index.html";
+                }
+            }
+        </script>
+        <title>Kirill Melikhov - Product (UX/UI) Designer</title>
+    </head>
+    <body>
+<!--This is header-->
+        
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="../resourses/interface/logo.svg" alt="logo"/></a>
+                <div class="name-container">
+                    <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+                </div>
+            </div>
+            <div class="social-media-top">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../resourses/icons/burger-menu.svg" alt="Menu" width="36px" height="auto"></div>
+            <!--Mobile menu-->
+            <div class="top-nav">
+                <ul>
+                    <a href="cases/index.html"><li class="nav-item">Cases</li></a><a href="about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="contact.html"><li class="nav-item">Contact me</li></a>
+                </ul>
+                <div class="social-media">
+                    <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+                </div>
+                <div class="language">
+                    <select id="language" onchange="changeLanguage()">
+                        <option value="Ru">Ru</option>
+                        <option value="Eng" selected>Eng</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <a href="cases/index.html"><li class="nav-item">Cases</li></a><a href="about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="contact.html"><li class="nav-item">Contact me</li></a>
+            </ul>
+            <div class="language">
+                <a href="index.html"><p class="description">English</p></a><a href="../index.html"><p class="description">Русский</p></a>
+            </div>
+            <div class="social-media">
+                <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+            </div>
+        </div>
+
+<!--Hero section-->
+
+        <section id="hero">
+            <div class="wrapping">
+                <div class="col-1">
+                    <h1 class="display">A modern approach to <span>digital</span> product design</h1>
+                    <div class="hero-mobile"></div>
+                    <div class="description">
+                        <p>As a professional product designer, I have a strong passion for creating cutting-edge digital products that not only fulfill user needs but also drive business growth.</p>
+                        <p>My objective is to assist businesses in developing standout products within a competitive market, positively impacting people's lives. If you're seeking a designer capable of transforming your ideas into reality and helping you achieve your business objectives, I am here to provide support.</p>
+                        <p>Feel free to reach out to me to initiate a discussion about the specifics of your upcoming project!</p>
+                    </div>
+                    <div class="buttons-container">
+                        <a href="cases/index.html"><button class="button-secondary">Watch cases</button></a>
+                        <a href="mailto: melikhov.design@gmail.com"><button class="button-primary">Get in touch</button></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="hero-picture" src="../resourses/images/hero-picture.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© All right reserved. Designed and developed by Kirill Melikhov, 2023 г.</p>
+        </section>
+    </body>
+</html>

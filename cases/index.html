@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+              var menu = document.getElementById("menu");
+              if (menu.style.display === "none") {
+                menu.style.display = "block";
+              } else {
+                menu.style.display = "none";
+              }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Eng") {
+                    window.location.href = "../eng/cases/index.html";
+                }
+            }
+        </script>
+        <title>Кирилл Мелихов - Продуктовый дизайнер | Портфолио</title>
+    </head>
+    <body>
+        
+<!--This is header-->
+        
+        <header>
+            <div id="logo">
+                <a href="../index.html"><img src="../resourses/interface/logo.svg" alt="logo"/></a>
+                <div class="name-container">
+                    <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->    
+                </div>           
+            </div>
+            <div class="social-media-top">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../resourses/icons/burger-menu.svg" alt="Menu" width="36px" height="auto"></div>
+            <div class="top-nav">
+                <ul>
+                    <a href="index.html"><li class="active-page">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+                </ul>
+                <div class="social-media">
+                    <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+                </div>
+                <div class="language">
+                    <select name="language" id="language" onchange="changeLanguage()">
+                        <option value="Ru" selected>Ru</option>
+                        <option value="Eng">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+            </ul>
+            <div class="language">
+                <a href="../eng/cases/index.html"><p class="description">English</p></a><a href="index.html"><p class="description">Русский</p></a>
+            </div>
+            <div class="social-media">
+                <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+            </div>
+        </div>
+
+<!--Main content-->
+
+        <section id="main">
+            <h1>Портфолио</h1>
+
+                <!--Case 1-->
+                <div class="case"> 
+                    <div class="project-cover">
+                        <img class="project" src="../resourses/images/cases/petrogradskaya/project-cover.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="chips">
+                            <div class="chip">UX/UI</div>
+                            <div class="chip">Web</div>
+                            <div class="chip">UX Research</div>
+                        </div>
+                        <h3>Булочная на Петроградской</h3>
+                        <p class="subheading">Пекарня</p>
+                        <div class="description">
+                            <p>"Булочная на Петроградской" - это новая пекарня, расположенная в самом сердце Петроградского района Санкт-Петербурга. Благодаря широкому ассортименту вкусной и свежевыпеченной продукции пекарня за эти годы завоевала лояльную клиентскую базу. Чтобы расширить свой охват и улучшить качество обслуживания клиентов, "Петроградская" решила приступить к разработке веб-сайта, чтобы создать привлекательную и удобную в использовании онлайн-платформу.</p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="petrogradskaya.html"><button class="button-primary">Подробнее</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case 2-->
+                <div class="case"> 
+                    <div class="project-cover">
+                        <img class="project" src="../resourses/images/cases/nutcracker/project-cover.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="chips">
+                            <div class="chip">UX/UI</div>
+                            <div class="chip">Web</div>
+                            <div class="chip">UX Research</div>
+                        </div>
+                        <h3>Nutcracker</h3>
+                        <p class="subheading">Магазин игрушек</p>
+                        <div class="description">
+                            <p>"Щелкунчик" - это хорошо зарекомендовавший себя и известный магазин игрушек, который предлагает широкий ассортимент высококачественных игрушек и игр для детей всех возрастов. Имея уже действующий физический магазин, компания осознает необходимость расширения своего охвата и предоставления покупателям захватывающего опыта онлайн-покупок. Для достижения этой цели "Щелкунчик" решил заняться разработкой веб-сайта, чтобы создать привлекательную и удобную в использовании платформу электронной коммерции.</p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="nutcracker.html"><button class="button-primary">Подробнее</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <!--Case 3-->
+                <div class="case"> 
+                    <div class="project-cover">
+                        <img class="project" src="../resourses/images/cases/sparta/project-cover.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="chips">
+                            <div class="chip">UX/UI</div>
+                            <div class="chip">Web</div>
+                            <div class="chip">UX Research</div>
+                        </div>
+                        <h3>Sparta</h3>
+                        <p class="subheading">Фитнес клуб</p>
+                        <div class="description">
+                            <p>Фитнес-клуб "Спарта" - популярное и процветающее фитнес-заведение, расположенное в оживленном районе мегаполиса. Клуб предлагает широкий спектр фитнес-услуг, включая групповые занятия фитнесом, персональные тренировки, специализированные программы и ультрасовременное оборудование для тренировок. Чтобы расширить свое присутствие в Интернете и обеспечить своим пользователям беспрепятственный доступ, Sparta решила приступить к проекту по редизайну веб-сайта.</p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="sparta.html"><button class="button-primary">Подробнее</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                    <!--Case 4-->
+                    <div class="case"> 
+                        <div class="project-cover">
+                            <img class="project" src="../resourses/images/cases/under-armour/project-cover.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="chips">
+                                <div class="chip">UX/UI</div>
+                                <div class="chip">Mobile</div>
+                                <div class="chip">UX Research</div>
+                            </div>
+                            <h3>Under Armour</h3>
+                            <p class="subheading">Магазин спортивной одежды</p>
+                            <div class="description">
+                                <p>UNDER ARMOR - ведущий американский интернет-магазин высокотехнологичной спортивной одежды, обуви и аксессуаров. В рамках разработки было проведено комплексное UX исследование, включающее анализ конкурентов, исследование пользователей и тестирование юзабилити.</p>
+                            </div>
+                            <div class="buttons-container">
+                                <a href="under-armour.html"><button class="button-primary">Подробнее</button></a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© Кирилл Мелихов, 2023 г. Все права защищены. </p>
+        </section>
+    </body>
+</html>

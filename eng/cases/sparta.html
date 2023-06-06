@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+              }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Ru") {
+                    window.location.href = "../../cases/sparta.html";
+                }
+            }
+
+            function openPopup(imagePath) {
+                var popup = document.getElementById('popup');
+                var popupImage = document.getElementById('popupImage');
+                popupImage.src = imagePath;
+                popup.style.display = 'block';
+            }
+
+            function closePopup(event) {
+                if (event.target === event.currentTarget) {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+                }
+            }
+        </script>
+        <title>Kirill Melikhov - Product (UX/UI) Designer | Sparta</title>
+    </head>
+    <body>
+
+        <!--Pop-up-->
+
+        <div id="popup" class="popup" onclick="closePopup(event)">
+            <div class="close-btn" onclick="closePopup(event)"></div>
+            <img id="popupImage" src="" alt="" onclick="closePopup(event)">
+        </div>
+        
+
+<!--This is header-->
+        
+    <header>
+        <div id="logo">
+            <a href="../index.html"><img src="../../resourses/interface/logo.svg" alt="logo"/></a>
+            <div class="name-container">
+                <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
+        </div>
+        <div class="social-media-top">
+            <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+        </div>
+        <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../../resourses/icons/burger-menu.svg" alt="Menu" width="36px" height="auto"></div>
+        <div class="top-nav">
+            <ul>
+                <a href="index.html"><li class="nav-item">Cases</li></a><a href="../about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="../contact.html"><li class="nav-item">Contact me</li></a>
+            </ul>
+            <div class="social-media">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="language">
+                <select name="language" id="language" onchange="changeLanguage()">
+                    <option value="Ru">Ru</option>
+                    <option value="Eng" selected>Eng</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li class="nav-item">Cases</li></a><a href="../about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="../contact.html"><li class="nav-item">Contact me</li></a>
+        </ul>
+        <div class="language">
+            <a href="sparta.html"><p class="description">English</p></a><a href="../../cases/sparta.html"><p class="description">Русский</p></a>
+        </div>
+        <div class="social-media">
+            <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+            <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+            <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+        </div>
+    </div>
+
+<!--Main content-->
+
+<!--Cover image-->
+
+        <section id="project-cover">
+                <img class="mockup" src="../../resourses/images/cases/sparta/mockup.png" alt="" width="100%">
+                <h1 class="project-title">Sparta</h1>
+        </section>
+
+<!--Project background-->
+
+        <section id="project-review">
+            <div class="container-small">
+                <h2>Overview</h2>
+                <div class="content">
+                    <h3>Project Background</h3>
+                    <p class="description">"Sparta", is a premium fitness club renowned for its exceptional services, sought to address the challenge of attracting and retaining members in the face of intense competition from other fitness clubs. To overcome this hurdle, I was brought on board as a UX/UI designer with the task of developing a new website that would effectively showcase the exclusive offerings of the fitness club and captivate potential users.</p>
+                    <p class="description">This case study will delve into the comprehensive process of designing the website for Sparta, encompassing the challenges encountered, the design decisions implemented, and the subsequent impact on the club's business.</p>
+                </div>
+                <div class="content">
+                    <h3>Project Goals</h3>
+                    <p class="description">The primary objective was to create a visually stunning and user-friendly website that would convey the club's premium status and entice visitors to explore its unique features and benefits. By strategically integrating elements of user experience (UX) and user interface (UI) design, I aimed to deliver a seamless and engaging online experience that would resonate with the target audience.</p>
+                </div>
+            </div>
+        </section>
+
+<!--Case study-->
+
+        <section id="case-study">
+            <div class="container-small">
+                <h2>Case Study</h2>
+                <h3>UX Research</h3>
+                    <p class="description">The project included a comprehensive UX study that incorporated various methods, such as conducting user interviews, performing a competitive audit, and creating a Customer Journey Map.</p>
+                    <p class="description">During the user interviews, valuable insights were gathered regarding the challenges faced by users of similar websites. Some of the key issues identified include:</p>
+                    <ul>
+                        <li class="task">Difficulty in finding information about the club's services, equipment, and subscription costs;</li>
+                        <li class="task">Limited or outdated class schedules that fail to reflect real-time availability;</li>
+                        <li class="task">Complex login or participant registration processes that require users to input excessive amounts of information;</li>
+                        <li class="task">User frustration and errors resulting from a poorly designed online booking system.</li>
+                    </ul>
+                    <p class="description">Additionally, a thorough analysis of competitor websites uncovered several noteworthy aspects, including strengths, weaknesses, and untapped opportunities.</p>
+                    <h4>Advantages:</h4>
+                    <ul>
+                        <li class="task">An easy-to-use online booking system for class scheduling;</li>
+                        <li class="task">An interactive calendar that displays real-time class schedules and seat availability;</li>
+                        <li class="task">User-friendly navigation and well-organized website structure;</li>
+                        <li class="task">Informative blogs and articles offering fitness and nutrition tips;</li>
+                        <li class="task">Other advantages.</li>
+                    </ul>
+                    <h4>Disadvantages:</h4>
+                    <ul>
+                        <li class="task">Limited or hard-to-find information about certain services;</li>
+                        <li class="task">Inconsistent or outdated class schedules and availability of open spots;</li>
+                        <li class="task">Confusing or unintuitive user interface;</li>
+                        <li class="task">Low-quality visual content, including images;</li>
+                        <li class="task">Other disadvantages;</li>
+                    </ul>
+                    <h4>Unrealized opportunities:</h4>
+                    <ul>
+                        <li class="task">Limited options for virtual or remote classes;</li>
+                        <li class="task">Insufficient resources for beginner athletes;</li>
+                        <li class="task">Lack of resources tailored to the elderly or individuals with special needs;</li>
+                        <li class="task">Inadequate accessibility options for people with disabilities;</li>
+                        <li class="task">Other unrealized opportunities.</li>
+                    </ul>
+                    <p class="description">Using the Customer Journey Map (CJM) was crucial in ensuring that the final design successfully meets the needs and expectations of the target audience. By creating a comprehensive CJM, I was able to visually map out the entire client journey, starting from the initial awareness stage all the way to their decision to join the club. This allowed me to identify and analyze the pain points and potential areas for improvement throughout the entire process.</p>
+                    <span onclick="openPopup('../../resourses/images/cases/sparta/cjm.jpg')"><img src="../../resourses/images/cases/sparta/cjm.jpg" alt="" width="100%" height="auto"></span>
+                    <p class="description">This enabled me to create a website that puts the user at the center and prioritize features and content that enhance the overall user experience, ultimately motivating visitors to take action. In today's digital landscape, the utilization of CJM has emerged as a crucial tool in achieving project goals and designing a successful website.</p>
+                    <p class="description">By leveraging the insights provided by the Customer Journey Map (CJM), I gained a deeper understanding of the user's needs, pain points, and motivations throughout their journey on the website. This holistic view allowed me to identify key touchpoints and optimize them to align with the user's expectations, thereby improving their overall satisfaction and engagement.</p>
+            </div>
+                
+            </div>
+            <div class="container-small">
+                <h3>Final Design</h3>
+                <p class="description">The site has been designed with a strict, minimalistic, and modern aesthetic, complemented by a clear information architecture. The landing page features several key sections, including a captivating hero section, an informative segment detailing the equipment available in the club's halls and studios, subscription options, a comprehensive list of instructors, and a dedicated section addressing frequently asked questions.</p>
+                <p class="description">The design of the site embraces simplicity and elegance, providing a visually pleasing experience for users. With its clean lines and streamlined interface, it allows visitors to easily navigate and access the information they need. The hero section serves as a focal point, captivating the attention of users and enticing them to explore further.</p>
+                <p class="description">To ensure transparency and facilitate decision-making, the site dedicates a section to highlight the various equipment available within the club's halls and studios. This enables potential members to understand the amenities and offerings they can expect, fostering trust and aiding in their decision-making process.</p>
+                <img src="../../resourses/images/cases/sparta/homepage.jpg" alt="" width="70%" height="auto">
+                <p class="description">Subscription options are prominently displayed on the landing page, making it convenient for users to explore different membership plans and select the one that best suits their needs. By presenting this information upfront, the site promotes an efficient user experience and helps visitors quickly determine the right membership option for them.</p>
+                <p class="description">In addition, the landing page features a comprehensive list of instructors, showcasing their expertise and credentials. This enables users to familiarize themselves with the instructors' backgrounds and specialties, enhancing their confidence in the club's offerings.</p>
+                <p class="description">Lastly, the inclusion of a well-structured section addressing frequently asked questions demonstrates a commitment to customer service. By addressing common queries and concerns, the site empowers visitors with the information they need to make informed decisions, reducing any potential barriers to engagement.</p>
+                <span onclick="openPopup('../../resourses/images/cases/sparta/flow-1.jpg')"><img src="../../resourses/images/cases/sparta/flow-1.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">The "About the Club" section consists of subsections that contain dedicated pages featuring services, offers, and other valuable information.</p>
+                <p class="description">Within the "About the Club" section, you will find carefully curated subsections that provide in-depth details about various aspects of the club. These subsections include pages that specifically focus on highlighting the club's services, showcasing the range of offerings available to members. From fitness programs to specialized training sessions, these pages offer comprehensive information about the club's diverse services.</p>
+                <span onclick="openPopup('../../resourses/images/cases/sparta/account.jpg')"><img src="../../resourses/images/cases/sparta/account.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">The personal account provided to club members grants them exclusive access to a comprehensive set of management features. Within their personal account, members can effortlessly track their training records, closely monitor their visits to the fitness room, conveniently renew their subscriptions, and even utilize an advanced Electronic Digital Signature (EDS) to sign essential documents. This all-in-one platform serves as a centralized hub for members to effectively manage their fitness-related activities and administrative tasks, ensuring a seamless and convenient experience throughout their membership journey.</p>
+            </div>
+        </section>
+
+<!--Conclusion-->
+
+        <section id="conclusion">
+            <div class="container-small">
+                    <h2>Conclusion</h2>
+                    <p class="description">Based on an extensive UX study, it became evident that developing a website for a premium fitness club would present both challenges and exciting opportunities. By conducting user interviews, performing competitive audits, and creating a customer journey map, I gained valuable insights into the needs and desires of potential users. These findings guided the creation of a website that not only meets but surpasses user expectations.</p>
+                    <p class="description">While all pages are important, particular attention was given to designing the schedule section and the personal account of club members, as these areas played a vital role in delivering a seamless and enjoyable user experience. By incorporating features that enable users to track progress, manage subscriptions, and conveniently record activities online, the website evolved into a valuable tool that empowers users to achieve their fitness goals effectively.</p>
+                    <p class="description">The entire process of developing the website for the fitness club proved to be an invaluable learning experience. Through thorough research and analysis, I was able to create a product that caters to the specific needs of users and serves as a valuable resource for club members. The website not only provides essential information but also offers interactive features that enhance engagement and facilitate a meaningful fitness journey.</p>
+                    <p class="description">In summary, the website development journey for the fitness club was shaped by an in-depth UX study. By leveraging research insights, I crafted a website that exceeds user expectations, with special attention given to the schedule section and the personal account functionality. This process has not only resulted in a successful website but has also provided me with valuable lessons and expertise in delivering user-centric digital experiences for fitness club members.</p>
+                </div>
+            </div>
+        </section>
+
+<!--Footer-->
+
+<section id="footer">
+    <!--<div class="banner-cta">
+        <h2>Я открыт для сотрудничества</h2>
+        <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+            <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+    </div>-->
+    <div class="sitemap">
+        <div class="social-media">
+            <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+            <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+            <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+        </div>
+    </div>
+    <p class="copy">© All right reserved. Designed and developed by Kirill Melikhov, 2023 г.</p>
+</section>
+    </body>
+<html

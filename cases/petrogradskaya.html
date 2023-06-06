@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Eng") {
+                    window.location.href = "../eng/cases/petrogradskaya.html";
+                }
+            }
+
+            function openPopup(imagePath) {
+                var popup = document.getElementById('popup');
+                var popupImage = document.getElementById('popupImage');      
+                popupImage.src = imagePath;
+                popup.style.display = 'block';
+            }
+
+            function closePopup(event) {
+                if (event.target === event.currentTarget) {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+                }
+            }
+        </script>
+        <title>Кирилл Мелихов - Продуктовый дизайнер | Портфолио</title>
+    </head>
+    <body>
+
+<!--This is header-->
+        
+    <header>
+        <div id="logo">
+            <a href="../index.html"><img src="../resourses/interface/logo.svg" alt="logo"/></a>
+            <div class="name-container">
+                <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
+        </div>
+        <div class="social-media-top">
+            <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+        </div>
+        <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../resourses/icons/burger-menu.svg" alt="Меню" width="36px" height="auto"></div>
+        <div class="top-nav">
+            <ul>
+                <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+            </ul>
+            <div class="social-media">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="language">
+                <select name="language" id="language" onchange="changeLanguage()">
+                    <option value="Ru" selected>Ru</option>
+                    <option value="Eng">Eng</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+        </ul>
+        <div class="language">
+            <a href="../eng/cases/petrogradskaya.html"><p class="description">English</p></a><a href="petrogradskaya.html"><p class="description">Русский</p></a>
+        </div>
+        <div class="social-media">
+            <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+            <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+            <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+        </div>
+    </div>
+
+<!--Main content-->
+
+<!--Cover image-->
+
+        <section id="project-cover">
+            <img class="mockup" src="../resourses/images/cases/petrogradskaya/mockup.png" alt="" width="100%">
+            <h1 class="project-title">Булочная на Петроградской</h1>
+        </section>
+
+<!--Project background-->
+
+        <section id="project-review">
+            <div class="container-small">
+                <h2>Обзор проекта</h2>
+                <div class="content">
+                    <h3>О проекте</h3>
+                    <p class="description">"Булочная на Петроградской" - это новая пекарня, расположенная в самом сердце Петроградского района Санкт-Петербурга. Благодаря широкому ассортименту вкусной и свежевыпеченной продукции пекарня за эти годы завоевала лояльную клиентскую базу. Чтобы расширить свой охват и улучшить качество обслуживания клиентов, "Петроградская" решила приступить к разработке веб-сайта, чтобы создать привлекательную и удобную в использовании онлайн-платформу.</p>
+                </div>
+                <div class="content">
+                    <h3>Цели проекта</h3>
+                    <p class="description">Целью проекта была разработка визуально привлекательного и удобного в использовании веб-сайта, который эффективно представлял бы фирменный стиль пекарни и демонстрировал ее широкий ассортимент продукции.</p>
+                    <p class="description">На протяжении всего процесса проектирования мое основное внимание было сосредоточено на создании удобного интерфейса, который привлекал бы посетителей сайта и направлял их, побуждая их ознакомиться с предложениями пекарни и в конечном итоге совершить покупку.</p>
+                </div>
+            </div>
+        </section>
+
+<!--Case study-->
+
+        <section id="case-study">
+            <div class="container-small">
+                <h2>Тематическое исследование</h2>
+                <h3>UX исследование</h3>
+                <p class="description">Cвое исследование, я начал с создания образа, используя данные, полученные в ходе опросов пользователей. Этот персонаж послужил репрезентативным архетипом, позволившим мне лучше понять потребности, предпочтения и поведение целевой аудитории.</p>
+                <p class="description">Этот процесс создания образа позволил получить ценную информацию, подчеркнув важность определенных факторов для пользователей. Исследование показало, что пользователи высоко ценят удобство оформления заказов, не выходя из дома, гарантию безопасности финансовых транзакций в процессе оплаты и доступность подробной информации о пищевой ценности продуктов. Вооружившись этим пониманием, я смог расставить приоритеты и учесть эти ключевые проблемы пользователей в дизайне и функциональности веб-сайта.</p>
+                <span onclick="openPopup('../resourses/images/cases/petrogradskaya/persona.png')"><img src="../resourses/images/cases/petrogradskaya/persona.png" alt="" width="100%" height="auto"></span>
+                    
+                    <!--Pop-up-->
+
+                    <div id="popup" class="popup" onclick="closePopup(event)">
+                        <div class="close-btn" onclick="closePopup(event)"></div>
+                        <img id="popupImage" src="" alt="" onclick="closePopup(event)">
+                    </div>
+                    
+                <p class="description">Затем я приступил к созданию пользовательского потока, который обеспечивает детальную визуализацию основного пути, который проходит клиент от первоначального посещения веб-сайта до совершения покупки. Кроме того, диаграмма включает альтернативный путь для сценариев, в которых намерение пользователя или цель поиска неизвестны. Эта всеобъемлющая диаграмма позволяет четко понять путь пользователя и помогает обеспечить плавный и интуитивно понятный интерфейс для пользователей, независимо от их конкретных потребностей или целей.</p>
+                <span onclick="openPopup('../resourses/images/cases/petrogradskaya/user-flow.jpg')"><img src="../resourses/images/cases/petrogradskaya/user-flow.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Я также создал карту путешествий клиентов (Customer Journey Map), которая помогла мне понять мотивацию и желания потенциальных пользователей, заранее определить проблемы, с которыми они могут столкнуться, и заблаговременно их решить.</p>
+                <span onclick="openPopup('../resourses/images/cases/petrogradskaya/cjm.jpg')"><img src="../resourses/images/cases/petrogradskaya/cjm.jpg" alt="" width="100%" height="auto"></span>
+                </div>
+                
+            </div>
+            <div class="container-small">
+                <h3>Финальный дизайн</h3>
+                <p class="description">Веб-сайт был оформлен в теплом и привлекательном стиле, который гармонично сочетается с фирменным стилем бренда. Он может похвастаться минималистичной эстетикой, акцентирующей внимание на простоте и элегантности. Структура сайта была продуманно организована таким образом, чтобы обеспечить простоту использования, позволяя пользователям легко ориентироваться и выполнять желаемые задачи.</p>
+                <p class="description">На главной странице веб-сайта представлены самые популярные продукты пекарни, представлена краткая история заведения и отзывы покупателей. Этот стратегический подход направлен на укрепление доверия и лояльности потенциальных клиентов, подчеркивая репутацию пекарни и положительные отзывы довольных посетителей.</p>
+                <img src="../resourses/images/cases/petrogradskaya/homepage.jpg" alt="" width="70%" height="auto">
+                <p class="description">Внутренние разделы, такие как "Обо мне" и "Кейтеринг", содержат ценную информацию о пекарне, ее продукции и спектре предоставляемых услуг. Эти разделы служат информационными ресурсами, позволяющими посетителям узнать больше об истории пекарни, ценностях и фирменных блюдах. Кроме того, они дают представление о различных доступных продуктах и услугах, помогая клиентам принимать обоснованные решения и в дальнейшем взаимодействовать с пекарней.</p>
+                <span onclick="openPopup('../resourses/images/cases/petrogradskaya/main-pages.jpg')"><img src="../resourses/images/cases/petrogradskaya/main-pages.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Пользователю предоставляется исчерпывающая информация о каждом продукте, включающая такую информацию, как состав, пищевая ценность, срок годности и отзывы других покупателей. Такой уровень детализации позволяет пользователям делать осознанный выбор, основываясь на своих предпочтениях, диетических требованиях и опыте предыдущих покупок. Предоставляя такую подробную информацию о продукте, пекарня стремится повысить прозрачность и облегчить своим клиентам уверенный и удовлетворительный процесс покупки.</p>
+                <p class="description">На странице корзины покупок отображаются товары, которые были добавлены пользователем, предоставляя четкий обзор их выбора. Кроме того, включен раздел с заманчивыми предложениями, побуждающий пользователей рассмотреть возможность добавления дополнительных товаров в свою корзину. Такое стратегическое размещение интересных предложений способствует повышению вовлеченности пользователей и потенциально повышает стоимость их покупки, обеспечивая при этом плавный и удобный процесс оформления заказа.</p>
+                <span onclick="openPopup('../resourses/images/cases/petrogradskaya/order-flow.jpg')"><img src="../resourses/images/cases/petrogradskaya/order-flow.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Чтобы улучшить пользовательский опыт, я упростил процесс оформления заказа, сделав его простым и удобным для пользователей за счет минимизации количества обязательных для заполнения полей. От пользователей требуется только указать или выбрать адрес доставки, данные получателя и выбрать предпочтительный способ оплаты. Такой подход уменьшает трения и обеспечивает плавный и эффективный процесс оформления заказа, что в конечном итоге способствует положительному пользовательскому опыту.</p>
+            </div>
+        </section>
+
+<!--Conclusion-->
+
+        <section id="conclusion">
+            <div class="container-small">
+                <h2>Вывод</h2>
+                <p class="description">Разработка веб-сайта для местной пекарни потребовала глубокого понимания потребностей и предпочтений пользователя. Проведение тщательного исследования UX сыграло ключевую роль в достижении этой цели. Разработка персоны, потоков пользователей и карты путешествий клиентов (CJM) помогла выявить болевые точки и предложить эффективные решения для улучшения. Результаты исследования послужили основой для дизайнерских решений, в результате чего был создан ориентированный на пользователя веб-сайт, который эффективно соответствует бизнес-целям пекарни. Благодаря включению информации о пользователях в процесс проектирования веб-сайт был адаптирован к конкретным потребностям целевой аудитории, что в конечном итоге улучшило общий пользовательский опыт.</p>
+                <p class="description">Удобство использования, визуальная привлекательность и доступность веб-сайта были тщательно продуманы, чтобы обеспечить легкое взаимодействие клиентов с пекарней и беспрепятственный онлайн-заказ их любимых лакомств. Включение UX-исследований в процесс проектирования сыграло важную роль в создании успешного веб-сайта, отвечающего ожиданиям клиентов. Уделяя приоритетное внимание потребностям и предпочтениям пользователей, веб-сайт потенциально может способствовать увеличению продаж и удовлетворенности клиентов. Акцент на пользовательском опыте будет способствовать позитивному восприятию бренда пекарни и повышению лояльности клиентов, что в конечном итоге будет способствовать успеху и росту бизнеса.</p>
+            </div>
+        </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                    <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© Кирилл Мелихов, 2023 г. Все права защищены. </p>
+        </section>
+    </body>
+<html

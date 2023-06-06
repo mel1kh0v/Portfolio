@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Eng") {
+                    window.location.href = "../eng/cases/nutcracker.html";
+                }
+            }
+
+            function openPopup(imagePath) {
+                var popup = document.getElementById('popup');
+                var popupImage = document.getElementById('popupImage');
+                popupImage.src = imagePath;
+                popup.style.display = 'block';
+            }
+
+            function closePopup(event) {
+                if (event.target === event.currentTarget) {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+                }
+            }
+        </script>
+        <title>Кирилл Мелихов - Продуктовый дизайнер | Nutcracker</title>
+    </head>
+    <body>
+
+<!--Pop-up-->
+
+<div id="popup" class="popup" onclick="closePopup(event)">
+    <div class="close-btn" onclick="closePopup(event)"></div>
+    <img id="popupImage" src="" alt="" onclick="closePopup(event)">
+</div>
+
+
+<!--This is header-->
+        
+    <header>
+        <div id="logo">
+            <a href="../index.html"><img src="../resourses/interface/logo.svg" alt="logo"/></a>
+            <div class="name-container">
+                <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
+        </div>
+        <div class="social-media-top">
+            <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+        </div>
+        <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../resourses/icons/burger-menu.svg" alt="Меню" width="36px" height="auto"></div>
+        <div class="top-nav">
+            <ul>
+                <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+            </ul>
+            <div class="social-media">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="language">
+                <select name="language" id="language" onchange="changeLanguage()">
+                    <option value="Ru" selected>Ru</option>
+                    <option value="Eng">Eng</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+        </ul>
+        <div class="language">
+            <a href="../eng/cases/nutcracker.html"><p class="description">English</p></a><a href="nutcracker.html"><p class="description">Русский</p></a>
+        </div>
+        <div class="social-media">
+            <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+            <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+            <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+        </div>
+    </div>
+
+<!--Cover image-->
+
+        <section id="project-cover">
+            <img class="mockup" src="../resourses/images/cases/nutcracker/mockup.png" alt="" width="100%">
+            <h1 class="project-title">Nutcracker</h1>
+        </section>
+
+<!--Project background-->
+
+        <section id="project-review">
+            <div class="container-small">
+                <h2>Обзор проекта</h2>
+                <div class="content">
+                    <h3>О проекте</h3>
+                    <p class="description">"Щелкунчик" - это хорошо зарекомендовавший себя и известный магазин игрушек, который предлагает широкий ассортимент высококачественных игрушек и игр для детей всех возрастов. Имея уже действующий физический магазин, компания осознает необходимость расширения своего охвата и предоставления покупателям захватывающего опыта онлайн-покупок. Для достижения этой цели "Щелкунчик" решил заняться разработкой веб-сайта, чтобы создать привлекательную и удобную в использовании платформу электронной коммерции.</p>
+                </div>
+                <div class="content">
+                    <h3>Цели и задачи</h3>
+                    <p class="description">Основной целью проекта была разработка современного и функционального интернет-магазина с визуально привлекательным дизайном и плавным процессом взаимодействия с пользователем.</p>
+                    <h4>В рамках проекта были поставлены следующие задачи:</h4>
+                    <ul>
+                        <li class="task">Разработка и внедрение интуитивно понятного и удобного интерфейса для интернет-магазина.</li>
+                        <li class="task">Создание организованного каталога товаров с четкой категоризацией и навигацией.</li>
+                        <li class="task">Реализация функции поиска, позволяющей пользователям легко находить конкретные товары.</li>
+                        <li class="task">Включение функций обмена информацией в социальных сетях и отзывов клиентов для поощрения вовлеченности и укрепления доверия.</li>
+                        <li class="task">Оптимизация веб-сайта для обеспечения высокой скорости загрузки с целью улучшения пользовательского опыта.</li>
+                        <li class="task">Проведение тщательного тестирования для выявления и устранения любых проблем с удобством использования или функциональностью.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!--Case study-->
+
+        <section id="case-study">
+            <div class="container-small">
+                <h2>Тематическое исследование</h2>
+                <h3>UX исследование</h3>
+                <p class="description">В этом проекте основным методом исследования был конкурсный аудит. Такой подход сыграл решающую роль в предотвращении потенциальных ошибок проектирования в будущем.</p>
+                <p class="description">В ходе анализа были получены ценные сведения. Было замечено, что многие веб-сайты конкурентов отображали изображения низкого качества и имели сложную информационную архитектуру, что приводило к затруднению потока пользователей.</p>
+                <p class="description">Кроме того, было отмечено, что большинство отраслевых конкурентов преимущественно использовали оттенки синего в дизайне своего интерфейса. Чтобы отличить веб-сайт от аналогичных и создать увлекательную атмосферу, сохраняя при этом ориентацию, было принято решение использовать яркий фиолетовый цвет, создавая тем самым волшебную атмосферу.</p>
+                <h3>Финальная версия дизайна</h3>
+                <p class="description">Окончательный дизайн позволил создать четко определенную информационную архитектуру, отличающуюся чистым и интуитивно понятным пользовательским интерфейсом, а также оптимизированным пользовательским потоком.</p>
+                <p class="description">Чтобы улучшить пользовательский опыт, контент был продуманно разделен на отдельные группы, каждая из которых сопровождалась четким названием. Это стратегическое решение позволило создать целостный и структурированный макет, что привело к улучшению взаимодействия с пользователем и простоте навигации.
+                <span onclick="openPopup('../resourses/images/cases/nutcracker/main-flow.jpg')"><img src="../resourses/images/cases/nutcracker/main-flow.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Важно было найти баланс между удобством использования и маркетинговыми аспектами, признавая важность того и другого для общего успеха веб-сайта.</p>
+                <p class="description">Чтобы обеспечить этот баланс, отдельные разделы, такие как "Не упустите выгоду", "Вам может понравиться" и "Выбор детей", были стратегически размещены рядом с основным контентом. Такой подход позволяет осуществлять эффективный маркетинг, не отвлекая пользователя от основной деятельности, а также мотивируя пользователей добавлять товары из этих разделов в свои корзины покупок.</p>
+                <p class="description">Кроме того, между секциями был предусмотрен преднамеренный интервал, обеспечивающий достаточно свободного пространства, которое при желании можно использовать для дополнительных целей, таких как реклама. Это обеспечивает гибкость при демонстрации рекламного контента, не перегружая общий дизайн и пользовательский опыт.</p>
+                <span onclick="openPopup('../resourses/images/cases/nutcracker/checkout.jpg')"><img src="../resourses/images/cases/nutcracker/checkout.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Процесс оформления заказа был оптимизирован таким образом, чтобы быть максимально простым. Пользователи могут легко выбрать удобный способ доставки, ввести необходимую информацию и перейти к оплате. Пользователям не обязательно проходить процедуру регистрации на сайте; однако такой подход предоставляет дополнительные преимущества, такие как доступ к программе лояльности и функциям отслеживания заказов. Это позволяет пользователям пользоваться преимуществами регистрации, в то же время обеспечивая беспроблемный процесс оформления заказа для тех, кто предпочитает не создавать учетную запись.</p>
+                <span onclick="openPopup('../resourses/images/cases/nutcracker/profile.jpg')"><img src="../resourses/images/cases/nutcracker/profile.jpg" alt="" width="100%" height="auto"></span>
+            </div>
+        </section>
+
+<!--Conclusion-->
+
+        <section id="conclusion">
+            <div class="container-small">
+                <h2>Вывод</h2>
+                <p class="description">После проведения всестороннего конкурентного аудита и успешного развития удобного в использовании интернет-магазина "Щелкунчик" стало очевидно, что веб-сайт обладает большим потенциалом в качестве ценного актива для бизнеса. Конкурентный аудит позволил получить ценную информацию о тех областях, в которых Nutcracker может отличаться от конкурентов, при этом особое внимание уделяется удобству использования и наглядности, чтобы клиенты могли легко перемещаться по веб-сайту и совершать покупки.</p>
+                <p class="description">Тем не менее, важно признать, что разработка веб-сайта онлайн-коммерции - это непрерывный процесс, требующий постоянного совершенствования и адаптации. Nutcracker должен постоянно отслеживать пользовательские данные и отзывы, чтобы определить области для улучшения и убедиться, что веб-сайт эффективно удовлетворяет потребности своих клиентов.</p>
+                <p class="description">Я чрезвычайно удовлетворен проделанной на данный момент работой. Конкурентный аудит дал бесценную информацию об отрасли, позволив мне точно определить области, в которых Nutcracker может выделиться и усовершенствовать существующие стратегии.</p>
+                <p class="description">В целом, я в восторге от потенциальных преимуществ, которые может принести Nutcracker, и с нетерпением ожидаю его успеха на конкурентном онлайн-рынке.</p>
+            </div>
+        </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                    <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© Кирилл Мелихов, 2023 г. Все права защищены. </p>
+        </section>
+    </body>
+<html

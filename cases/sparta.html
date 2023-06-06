@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Eng") {
+                    window.location.href = "../eng/cases/sparta.html";
+                }
+            }
+
+            function openPopup(imagePath) {
+      var popup = document.getElementById('popup');
+      var popupImage = document.getElementById('popupImage');
+      
+      popupImage.src = imagePath;
+      popup.style.display = 'block';
+    }
+
+    function closePopup(event) {
+      if (event.target === event.currentTarget) {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+      }
+    }
+        </script>
+        <title>Кирилл Мелихов - Продуктовый дизайнер | Портфолио</title>
+    </head>
+    <body>
+
+        <!--Pop-up-->
+
+        <div id="popup" class="popup" onclick="closePopup(event)">
+            <div class="close-btn" onclick="closePopup(event)"></div>
+            <img id="popupImage" src="" alt="" onclick="closePopup(event)">
+        </div>
+        
+
+<!--This is header-->
+        
+    <header>
+        <div id="logo">
+            <a href="../index.html"><img src="../resourses/interface/logo.svg" alt="logo"/></a>
+            <div class="name-container">
+                <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
+        </div>
+        <div class="social-media-top">
+            <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+        </div>
+        <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../resourses/icons/burger-menu.svg" alt="Меню" width="36px" height="auto"></div>
+        <div class="top-nav">
+            <ul>
+                <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+            </ul>
+            <div class="social-media">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="language">
+                <select name="language" id="language" onchange="changeLanguage()">
+                    <option value="Ru" selected>Ru</option>
+                    <option value="Eng">Eng</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><li class="nav-item">Статьи</li><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+        </ul>
+        <div class="language">
+            <a href="../eng/cases/sparta.html"><p class="description">English</p></a><a href="sparta.html"><p class="description">Русский</p></a>
+        </div>
+        <div class="social-media">
+            <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+            <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+            <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+        </div>
+    </div>
+
+<!--Main content-->
+
+<!--Cover image-->
+
+        <section id="project-cover">
+                <img class="mockup" src="../resourses/images/cases/sparta/mockup.png" alt="" width="100%">
+                <h1 class="project-title">Sparta</h1>
+        </section>
+
+<!--Project background-->
+
+        <section id="project-review">
+            <div class="container-small">
+                <h2>Обзор проекта</h2>
+                <div class="content">
+                    <h3>О проекте</h3>
+                    <p class="description">Sparta, фитнес-клуб премиум-класса, известный своими исключительными услугами, стремился решить проблему привлечения и удержания участников в условиях жесткой конкуренции со стороны других фитнес-клубов. Чтобы преодолеть это препятствие, я был привлечен к работе в качестве дизайнера UX /UI с задачей разработать новый веб-сайт, который эффективно демонстрировал бы эксклюзивные предложения фитнес-клуба и привлекал потенциальных пользователей.</p>
+                    <p class="description">В этом тематическом исследовании будет рассмотрен комплексный процесс разработки веб-сайта для "Спарты", охватывающий возникшие проблемы, реализованные дизайнерские решения и последующее влияние на бизнес клуба.</p>
+                </div>
+                <div class="content">
+                    <h3>Цели проекта</h3>
+                    <p class="description">Основная цель состояла в том, чтобы создать визуально потрясающий и удобный для пользователя веб-сайт, который передавал бы премиальный статус клуба и побуждал посетителей знакомиться с его уникальными функциями и преимуществами. Стратегически интегрируя элементы пользовательского опыта (UX) и дизайна пользовательского интерфейса (UI), я стремился создать плавный и привлекательный онлайн-интерфейс, который нашел бы отклик у целевой аудитории.</p>
+            </div>
+        </section>
+
+<!--Case study-->
+
+        <section id="case-study">
+            <div class="container-small">
+                <h2>Тематическое исследование</h2>
+                <h3>UX исследование</h3>
+                    <p class="description">Проект включал в себя всестороннее исследование UX, которое включало различные методы, такие как проведение собеседований с пользователями, проведение конкурентного аудита и создание карты путешествий клиентов (CJM).</p>
+                    <p class="description">В ходе опросов пользователей была получена ценная информация о проблемах, с которыми сталкиваются пользователи аналогичных веб-сайтов. Некоторые из выявленных ключевых проблем включают:</p>
+                    <ul>
+                        <li class="task">Трудности с поиском информации об услугах клуба, тренажерах и стоимости подписки;</li>
+                        <li class="task">Ограниченное или устаревшее расписание занятий, которое не отражает доступность в режиме реального времени;</li>
+                        <li class="task">Сложные процессы входа в систему или регистрации участников, требующие от пользователей ввода чрезмерного объема информации;</li>
+                        <li class="task">Разочарование пользователей и ошибки, возникающие в результате плохо разработанной системы онлайн-бронирования.</li>
+                    </ul>
+                    <p class="description">Кроме того, тщательный анализ веб-сайтов конкурентов выявил несколько заслуживающих внимания аспектов, включая сильные и слабые стороны и неиспользованные возможности.</p>
+                    <h4>Преимущества:</h4>
+                    <ul>
+                        <li class="task">Простая в использовании система онлайн-бронирования для планирования занятий;</li>
+                        <li class="task">Интерактивный календарь, отображающий расписание занятий в режиме реального времени и наличие свободных мест;</li>
+                        <li class="task">Удобная навигация и хорошо организованная структура веб-сайта;</li>
+                        <li class="task">Информативные блоги и статьи, предлагающие советы по фитнесу и правильному питанию;</li>
+                        <li class="task">Другие преимущества;</li>
+                    </ul>
+                    <h4>Недостатки:</h4>
+                    <ul>
+                        <li class="task">Ограниченная или труднодоступная информация об определенных услугах;</li>
+                        <li class="task">Несогласованное или устаревшее расписание занятий и наличие свободных мест;</li>
+                        <li class="task">Запутанный или неинтуитивный пользовательский интерфейс;</li>
+                        <li class="task">Низкокачественный визуальный контент, включая изображения;</li>
+                        <li class="task">Другие недостатки;</li>
+                    </ul>
+                    <h4>Нереализованные возможности:</h4>
+                    <ul>
+                        <li class="task">Ограниченные возможности для виртуальных или удаленных занятий;</li>
+                        <li class="task">Недостаточные ресурсы для начинающих спортсменов;</li>
+                        <li class="task">Нехватка ресурсов, ориентированных на пожилых людей или лиц с особыми потребностями;</li>
+                        <li class="task">Неадекватные возможности обеспечения доступности для людей с ограниченными возможностями;</li>
+                        <li class="task">Другие нереализованные возможности.</li>
+                    </ul>
+                    <p class="description">Использование карты путешествий клиента (CJM) имело решающее значение для обеспечения того, чтобы окончательный дизайн успешно соответствовал потребностям и ожиданиям целевой аудитории. Создав всеобъемлющий CJM, я смог визуально наметить весь путь клиента, начиная с начальной стадии ознакомления и заканчивая его решением присоединиться к клубу. Это позволило мне выявить и проанализировать болевые точки и потенциальные области для улучшения на протяжении всего процесса.</p>
+                    <span onclick="openPopup('../resourses/images/cases/sparta/cjm.jpg')"><img src="../resourses/images/cases/sparta/cjm.jpg" alt="" width="100%" height="auto"></span>
+                    <p class="description">Это позволило мне создать веб-сайт, который ставит пользователя в центр внимания и расставляет приоритеты в функциях и контенте, которые улучшают общий пользовательский опыт, в конечном счете мотивируя посетителей к действию. В современном цифровом ландшафте использование CJM стало важнейшим инструментом в достижении целей проекта и разработке успешного веб-сайта.</p>
+                    <p class="description">Используя информацию, предоставленную Картой путешествий клиентов (CJM), я получил более глубокое понимание потребностей пользователей, болевых точек и мотиваций на протяжении всего их пребывания на веб-сайте. Этот целостный подход позволил мне определить ключевые точки соприкосновения и оптимизировать их в соответствии с ожиданиями пользователей, тем самым повысив их общую удовлетворенность и вовлеченность.</p>
+            </div>
+            <div class="container-small">
+                <h3>Финальный дизайн</h3>
+                <p class="description">Сайт был разработан в строгой, минималистичной и современной эстетике, дополненной четкой информационной архитектурой. Целевая страница содержит несколько ключевых разделов, в том числе увлекательный раздел о героях, информативный сегмент с подробным описанием оборудования, доступного в залах и студиях клуба, варианты подписки, полный список инструкторов и специальный раздел, посвященный часто задаваемым вопросам.</p>
+                <p class="description">Дизайн сайта сочетает в себе простоту и элегантность, обеспечивая пользователям визуально приятный интерфейс. Благодаря четким линиям и оптимизированному интерфейсу он позволяет посетителям легко ориентироваться и получать доступ к необходимой им информации. Раздел героя служит фокусом, привлекая внимание пользователей и побуждая их к дальнейшему изучению.</p>
+                <p class="description">Чтобы обеспечить прозрачность и облегчить принятие решений, на сайте выделен раздел, посвященный различному оборудованию, доступному в залах и студиях клуба. Это позволяет потенциальным участникам понять, на какие удобства и предложения они могут рассчитывать, укрепляя доверие и помогая им в процессе принятия решений.</p>
+                <img src="../resourses/images/cases/sparta/homepage.jpg" alt="" width="70%" height="auto">
+                <p class="description">Варианты подписки отображаются на видном месте на целевой странице, что позволяет пользователям просматривать различные планы подписки и выбирать тот, который наилучшим образом соответствует их потребностям. Предоставляя эту информацию заранее, сайт способствует эффективному взаимодействию с пользователями и помогает посетителям быстро определить подходящий для них вариант членства.</p>
+                <p class="description">Кроме того, на целевой странице представлен полный список инструкторов, демонстрирующий их опыт и полномочия. Это позволяет пользователям ознакомиться с опытом и специальностями инструкторов, повышая их уверенность в предложениях клуба.</p>          
+                <p class="description">Наконец, включение хорошо структурированного раздела, посвященного часто задаваемым вопросам, демонстрирует приверженность к обслуживанию клиентов. Отвечая на распространенные запросы и проблемы, сайт предоставляет посетителям информацию, необходимую им для принятия обоснованных решений, снижая любые потенциальные барьеры для взаимодействия.</p>
+                <span onclick="openPopup('../resourses/images/cases/sparta/flow-1.jpg')"><img src="../resourses/images/cases/sparta/flow-1.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Раздел "О клубе" состоит из подразделов, содержащих специальные страницы, на которых представлены услуги, предложения и другая ценная информация.</p>
+                <p class="description">В этом разделе пользователь может найти тщательно отобранные подразделы, которые содержат подробную информацию о различных аспектах деятельности клуба. Эти подразделы включают страницы, которые специально посвящены освещению услуг клуба, демонстрируя спектр предложений, доступных членам. На этих страницах представлена исчерпывающая информация о разнообразных услугах клуба - от фитнес-программ до специализированных тренировок.</p>
+                <span onclick="openPopup('../resourses/images/cases/sparta/account.jpg')"><img src="../resourses/images/cases/sparta/account.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Личный кабинет, предоставляемый членам клуба, предоставляет им эксклюзивный доступ к полному набору функций управления. В своем личном кабинете участники могут без особых усилий отслеживать свои записи о тренировках, внимательно следить за посещениями фитнес-зала, удобно продлевать подписку и даже использовать усовершенствованную электронную цифровую подпись (ЭЦП) для подписи важных документов. Эта универсальная платформа служит централизованным центром для участников, позволяющим им эффективно управлять своими занятиями, связанными с фитнесом, и административными задачами, обеспечивая бесперебойную и удобную работу на протяжении всего срока их членства.</p>
+            </div>
+        </section>
+
+<!--Conclusion-->
+
+        <section id="conclusion">
+            <div class="container-small">
+                <h2>Вывод</h2>
+                <p class="description">Основываясь на обширном исследовании UX, стало очевидно, что разработка веб-сайта для фитнес-клуба премиум-класса сопряжена как с трудностями, так и с захватывающими возможностями. Проводя собеседования с пользователями, проводя конкурентные аудиты и создавая карту путешествий клиентов, я получил ценную информацию о потребностях и желаниях потенциальных пользователей. Эти выводы послужили основой для создания веб-сайта, который не только соответствует ожиданиям пользователей, но и превосходит их.</p>
+                <p class="description">Несмотря на важность всех страниц, особое внимание было уделено оформлению раздела расписания и личного кабинета членов клуба, поскольку эти области сыграли жизненно важную роль в обеспечении бесперебойного и приятного взаимодействия с пользователями. Благодаря включению функций, которые позволяют пользователям отслеживать прогресс, управлять подписками и удобно записывать действия онлайн, веб-сайт превратился в ценный инструмент, позволяющий пользователям эффективно достигать своих целей в фитнесе.</p>
+                <p class="description">Весь процесс разработки веб-сайта для фитнес-клуба оказался бесценным опытом обучения. Благодаря тщательным исследованиям и анализу я смог создать продукт, который удовлетворяет конкретным потребностям пользователей и служит ценным ресурсом для членов клуба. Веб-сайт не только предоставляет необходимую информацию, но и предлагает интерактивные функции, которые повышают вовлеченность и облегчают полноценное занятие фитнесом.</p>
+                <p class="description">Таким образом, процесс разработки веб-сайта для фитнес-клуба был сформирован на основе углубленного изучения UX. Используя результаты исследований, я создал веб-сайт, который превосходит ожидания пользователей, уделив особое внимание разделу расписания и функциональности личного кабинета. Этот процесс не только привел к созданию успешного веб-сайта, но и дал мне ценные уроки и опыт в предоставлении ориентированного на пользователя цифрового опыта членам фитнес-клуба.</p>
+            </div>
+        </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                    <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© Кирилл Мелихов, 2023 г. Все права защищены. </p>
+        </section>
+    </body>
+<html

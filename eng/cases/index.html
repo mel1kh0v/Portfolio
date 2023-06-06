@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+              var menu = document.getElementById("menu");
+              if (menu.style.display === "none") {
+                menu.style.display = "block";
+              } else {
+                menu.style.display = "none";
+              }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Ru") {
+                    window.location.href = "../../cases/index.html";
+                }
+            }
+        </script>
+        <title>Kirill Melikhov - Product (UX/UI) Designer | Cases</title>
+    </head>
+    <body>
+        
+<!--This is header-->
+        
+        <header>
+            <div id="logo">
+                <a href="../index.html"><img src="../../resourses/interface/logo.svg" alt="logo"/></a>
+                <div class="name-container">
+                    <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->    
+                </div>           
+            </div>
+            <div class="social-media-top">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../../resourses/icons/burger-menu.svg" alt="Menu" width="36px" height="auto"></div>
+            <div class="top-nav">
+                <ul>
+                    <a href="../cases/index.html"><li class="active-page">Cases</li></a><a href="../about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="../contact.html"><li class="nav-item">Contact me</li></a>
+                </ul>
+                <div class="social-media">
+                    <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+                </div>
+                <div class="language">
+                    <select name="language" id="language" onchange="changeLanguage()">
+                        <option value="Ru">Ru</option>
+                        <option value="Eng" selected>Eng</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <a href="../cases/index.html"><li class="nav-item">Cases</li></a><a href="../about.html"><li class="nav-item">About</li></a><li class="nav-item">Articles</li><a href="../contact.html"><li class="nav-item">Contact me</li></a>
+            </ul>
+            <div class="language">
+                <a href="index.html"><p class="description">English</p></a><a href="../../cases/index.html"><p class="description">Русский</p></a>
+            </div>
+            <div class="social-media">
+                <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+            </div>
+        </div>
+
+<!--Main content-->
+
+        <section id="main">
+            <h1>Case Studies</h1>
+
+                <!--Case 1-->
+                <div class="case"> 
+                    <div class="project-cover">
+                        <img class="project" src="../../resourses/images/cases/petrogradskaya/project-cover.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="chips">
+                            <div class="chip">UX/UI</div>
+                            <div class="chip">Web</div>
+                            <div class="chip">UX Research</div>
+                        </div>
+                        <h3>Bakery on Petrogradskaya</h3>
+                        <p class="subheading">Bakery</p>
+                        <div class="description">
+                            <p>"Bakery on Petrogradskaya" is a new bakery located in the heart of Petrogradsky District, St. Petersburg. With its wide range of delicious and freshly baked goods, the bakery has gained a loyal customer base over the years. To expand its reach and enhance customer experience, "Petrogradskaya" has decided to embark on a website development project to create an enticing and user-friendly online platform.</p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="petrogradskaya.html"><button class="button-primary">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case 2-->
+                <div class="case"> 
+                    <div class="project-cover">
+                        <img class="project" src="../../resourses/images/cases/nutcracker/project-cover.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="chips">
+                            <div class="chip">UX/UI</div>
+                            <div class="chip">Web</div>
+                            <div class="chip">UX Research</div>
+                        </div>
+                        <h3>Nutcracker</h3>
+                        <p class="subheading">Toy Shop</p>
+                        <div class="description">
+                            <p>"Nutcracker" is a well-established and renowned toy shop that offers a wide range of high-quality toys and games for children of all ages. With a physical store already in place, the company recognizes the need to expand its reach and provide an immersive online shopping experience for customers. To achieve this, "Nutcracker" has decided to undertake a website development project to create an engaging and user-friendly e-commerce platform.</p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="nutcracker.html"><button class="button-primary">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <!--Case 3-->
+                <div class="case"> 
+                    <div class="project-cover">
+                        <img class="project" src="../../resourses/images/cases/sparta/project-cover.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="chips">
+                            <div class="chip">UX/UI</div>
+                            <div class="chip">Web</div>
+                            <div class="chip">UX Research</div>
+                        </div>
+                        <h3>Sparta</h3>
+                        <p class="subheading">Fitness Club</p>
+                        <div class="description">
+                            <p>The "Sparta" fitness club is a popular and thriving fitness facility located in a bustling metropolitan area. The club offers a wide range of fitness services, including group fitness classes, personal training, specialized programs, and state-of-the-art workout equipment. In order to enhance their online presence and provide a seamless experience to their members, Sparta has decided to embark on a website redesign project.</p>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="sparta.html"><button class="button-primary">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                    <!--Case 4-->
+                    <div class="case"> 
+                        <div class="project-cover">
+                            <img class="project" src="../../resourses/images/cases/under-armour/project-cover.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="chips">
+                                <div class="chip">UX/UI</div>
+                                <div class="chip">Mobile</div>
+                                <div class="chip">UX Research</div>
+                            </div>
+                            <h3>Under Armour</h3>
+                            <p class="subheading">Sportswear store</p>
+                            <div class="description">
+                                <p>"Under Armour" is a globally recognized sportswear brand known for its high-performance athletic apparel and accessories. With a large customer base and a wide range of products, "Under Armour" recognizes the need to provide a seamless and engaging shopping experience for its customers. To achieve this, the company has decided to undertake an app design project to create a user-friendly and visually appealing mobile application.</p>
+                            </div>
+                            <div class="buttons-container">
+                                <a href="under-armour.html"><button class="button-primary">Learn more</button></a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+            <hr >
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© All right reserved. Designed and developed by Kirill Melikhov, 2023 г.</p>
+        </section>
+    </body>
+</html>

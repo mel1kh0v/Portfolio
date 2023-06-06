@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Ru") {
+                    window.location.href = "../../cases/petrogradskaya.html";
+                }
+            }
+
+            function openPopup(imagePath) {
+                var popup = document.getElementById('popup');
+                var popupImage = document.getElementById('popupImage');
+                popupImage.src = imagePath;
+                popup.style.display = 'block';
+            }
+
+            function closePopup(event) {
+                if (event.target === event.currentTarget) {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+<!--This is header-->
+        
+    <header>
+        <div id="logo">
+            <a href="../index.html"><img src="../../resourses/interface/logo.svg" alt="logo"/></a>
+            <div class="name-container">
+                <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
+        </div>
+        <div class="social-media-top">
+            <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+        </div>
+        <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../../resourses/icons/burger-menu.svg" alt="Menu" width="36px" height="auto"></div>
+        <div class="top-nav">
+            <ul>
+                <a href="index.html"><li class="nav-item">Cases</li></a><a href="../about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="../contact.html"><li class="nav-item">Contact me</li></a>
+            </ul>
+            <div class="social-media">
+                <a class="icon" href="https://www.behance.net/melikhoff" target="_blank"><img src="../../resourses/icons/behance.svg" alt="behance" width="36px" height="36px"></a>
+                <a class="icon" href="https://www.linkedin.com/in/melikhov-design" target="_blank"><img src="../../resourses/icons/linkedin.svg" alt="linkedin" width="36px" height="36px"></a>
+            </div>
+            <div class="language">
+                <select name="language" id="language" onchange="changeLanguage()">
+                    <option value="Ru">Ru</option>
+                    <option value="Eng" selected>Eng</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li class="nav-item">Cases</li></a><a href="../about.html"><li class="nav-item">About me</li></a><li class="nav-item">Articles</li><a href="../contact.html"><li class="nav-item">Contact me</li></a>
+        </ul>
+        <div class="language">
+            <a href="petrogradskaya.html"><p class="description">English</p></a><a href="../../cases/petrogradskaya.html"><p class="description">Русский</p></a>
+        </div>
+        <div class="social-media">
+            <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+            <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+            <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+            <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+        </div>
+    </div>
+
+<!--Cover image-->
+
+        <section id="project-cover">
+            <img class="mockup" src="../../resourses/images/cases/petrogradskaya/mockup.png" alt="" width="100%">
+            <h1 class="project-title">Bakery on Petrogradskaya</h1>
+        </section>
+
+<!--Project background-->
+
+        <section id="project-review">
+                <div class="container-small">
+                    <h2>Overview</h2>
+                    <div class="content">
+                        <h3>Project Background</h3>
+                        <p class="description">"Bakery on Petrogradskaya" is a new bakery located in the heart of Petrogradsky District, St. Petersburg. With its wide range of delicious and freshly baked goods, the bakery has gained a loyal customer base over the years. To expand its reach and enhance customer experience, "Petrogradskaya" has decided to embark on a website development project to create an enticing and user-friendly online platform.</p>
+                    </div>
+                    <div class="content">
+                        <h3>Project Goals</h3>
+                        <p class="description">The project aimed to develop a visually appealing and user-friendly website that effectively represented the bakery's brand identity and showcased its wide range of products.</p>
+                        <p class="description">Throughout the design process, my primary focus was on creating a user-friendly interface that would engage and guide site visitors, encouraging them to explore the bakery's offerings and ultimately make a purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--Case study-->
+
+        <section id="case-study">
+            <div class="container-small">
+                <h2>Case Study</h2>
+                <h3>UX Research</h3>
+                <p class="description">To initiate my research, I began by crafting a persona using the data acquired during user interviews. This persona served as a representative archetype, enabling me to better understand the needs, preferences, and behaviors of the target audience.</p>
+                <p class="description">This process of creating a persona provided valuable insights, highlighting the significance of certain factors to users. It revealed that users highly value the convenience of placing orders from the comfort of their homes, the assurance of secure financial transactions during the payment process, and the availability of detailed information about the nutritional value of the products. Armed with this understanding, I was able to prioritize and address these key user concerns in the design and functionality of the website.</p>
+                <span onclick="openPopup('../../resourses/images/cases/petrogradskaya/persona.png')"><img src="../../resourses/images/cases/petrogradskaya/persona.png" alt="" width="100%" height="auto"></span>
+                    
+                    <!--Pop-up-->
+
+                    <div id="popup" class="popup" onclick="closePopup(event)">
+                        <div class="close-btn" onclick="closePopup(event)"></div>
+                        <img id="popupImage" src="" alt="" onclick="closePopup(event)">
+                    </div>
+                    
+                <p class="description">Next, I proceeded to create a user flow diagram that provides a detailed visualization of the main path a client takes from their initial visit to the website to completing a purchase. Additionally, the diagram encompasses an alternate path for scenarios where the user's intent or purpose of the search is unknown. This comprehensive diagram allows for a clear understanding of the user journey and helps ensure a seamless and intuitive experience for users, regardless of their specific needs or goals.</p>
+                <span onclick="openPopup('../../resourses/images/cases/petrogradskaya/user-flow.jpg')"><img src="../../resourses/images/cases/petrogradskaya/user-flow.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">I also created a customer journey map, which helped me understand the motivation and desires of potential users, identify problems they may encounter in advance and solve them in advance.</p>
+                <span onclick="openPopup('../../resourses/images/cases/petrogradskaya/cjm.jpg')"><img src="../../resourses/images/cases/petrogradskaya/cjm.jpg" alt="" width="100%" height="auto"></span>
+            </div>
+                
+            </div>
+            <div class="container-small">
+                <h3>Final Design</h3>
+                <p class="description">The website has been adorned with a warm and inviting design that aligns harmoniously with the brand's corporate identity. It boasts a minimalistic aesthetic, focusing on simplicity and elegance. The site's structure has been thoughtfully organized to ensure ease of use, allowing users to effortlessly navigate and accomplish their desired tasks.</p>
+                <p class="description">The main page of the website showcases the bakery's most popular products, provides a brief history of the establishment, and features customer reviews. This strategic approach aims to build trust and loyalty among potential customers by highlighting the bakery's reputation and positive feedback from satisfied patrons.</p>
+                <img src="../../resourses/images/cases/petrogradskaya/homepage.jpg" alt="" width="70%" height="auto">
+                <p class="description">The internal sections, such as "About Me" and "Catering," offer valuable information about the bakery, its products, and the range of services provided. These sections serve as informative resources, allowing visitors to learn more about the bakery's background, values, and specialties. Additionally, they provide insights into the various products and services available, assisting customers in making informed decisions and further engaging with the bakery.</p>
+                <span onclick="openPopup('../../resourses/images/cases/petrogradskaya/main-pages.jpg')"><img src="../../resourses/images/cases/petrogradskaya/main-pages.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">The user is presented with comprehensive details about each product, encompassing information such as the composition, nutritional value, shelf life, and reviews from other customers. This level of detail allows users to make informed choices based on their preferences, dietary requirements, and the experiences of previous customers. By providing such thorough product information, the bakery aims to enhance transparency and facilitate a confident and satisfactory purchase experience for its customers.</p>
+                <p class="description">The shopping cart page showcases the products that have been added by the user, providing a clear overview of their selections. Additionally, a section featuring enticing offers is included, encouraging users to consider adding additional products to their basket. This strategic placement of interesting offers serves to increase the user's engagement and potentially boost their purchase value, while ensuring a seamless and convenient checkout process.</p>
+                <span onclick="openPopup('../../resourses/images/cases/petrogradskaya/order-flow.jpg')"><img src="../../resourses/images/cases/petrogradskaya/order-flow.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">To enhance the user experience, I have streamlined the ordering process, making it simple and convenient for users by minimizing the number of required fields to fill in. Users are only required to provide or select the delivery address, recipient's details, and choose a preferred payment method. This approach reduces friction and ensures a smooth and efficient checkout process, ultimately contributing to a positive user experience.</p>
+            </div>
+        </section>
+
+<!--Conclusion-->
+
+        <section id="conclusion">
+            <div class="container-small">
+                <h2>Conclusion</h2>
+                <p class="description">Designing a website for a local bakery necessitated a deep understanding of the user's needs and preferences. Conducting thorough UX research played a pivotal role in accomplishing this objective. Developing a persona, user flows, and a customer journey map (CJM) aided in identifying pain points and proposing effective solutions for improvement. The findings from the research served as the foundation for design decisions, resulting in the creation of a user-centered website that effectively aligns with the bakery's business goals. By incorporating user insights into the design process, the website was tailored to meet the specific needs of the target audience, ultimately enhancing the overall user experience.</p> 
+                <p class="description">The website's usability, visual appeal, and accessibility have been carefully crafted to ensure effortless customer interactions with the bakery and seamless online ordering of their favorite treats. The inclusion of UX research in the design process has been instrumental in creating a successful website that meets customer expectations. By prioritizing user needs and preferences, the website has the potential to drive increased sales and customer satisfaction. The focus on user experience will foster a positive perception of the bakery's brand and enhance customer loyalty, ultimately contributing to the success and growth of the business.</p>
+            </div>
+        </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                    <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="../../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img src="../../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img src="../../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img src="../../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© All right reserved. Designed and developed by Kirill Melikhov, 2023 г.</p>
+        </section>
+    </body>
+<html
