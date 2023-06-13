@@ -934,11 +934,13 @@
     }
 
     figure {
-        font-weight: 100;
+        font-weight: 400;
         font-size: 12px;
         line-height: 24px;
-        border-bottom: 1px solid #1A1A1A;
-        font-style: italic;
+        color: #a5a5a5;
+        font-style: normal;
+        text-align: center;
+        margin: 0px;
     }
     
     #logo {
