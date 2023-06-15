@@ -12,7 +12,7 @@
     }
     
     header {
-        background-color: hsla(0, 0%, 100%, 0.2);
+        background-color: hsla(0, 0%, 100%, 0.5);
         padding: 12px 50px;
         top: 0;
         width: 100%;
@@ -24,10 +24,10 @@
 /*Headings*/
 
     .display {
-        font-size: 54px;
-        line-height: 72px;
-        font-weight: 300;
-        letter-spacing: 0em;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 600;
+        letter-spacing: normal;
         text-transform: none;
         text-align: left;
         padding-top: 64px;
@@ -49,7 +49,7 @@
         line-height: 24px;
         font-weight: 500;
         letter-spacing: 0.2em;
-        margin: 0px 0px 12px 0px;
+        margin: 0px 0px 32px 0px;
         text-transform: uppercase;
         text-align: right;
     }
@@ -85,6 +85,8 @@
     }
     
     span {
+        font-size: 48px;
+        text-transform: uppercase;
         color: #99DDFF;
     }
     
@@ -143,7 +145,7 @@
     }
     
     a:visited {
-        color: #ffffff;
+        color: #1A1A1A;
     }
     
     #logo {
@@ -165,6 +167,45 @@
     #hero {
         margin: 64px 0px 0px 50px;
         height: 100%;
+    }
+
+    #about-me {
+        margin: 64px 50px 0px 50px;
+        height: 100%;
+    }
+
+    #portfolio {
+        margin: 64px 50px 0px 50px;
+        height: 100%;
+    }
+
+    #services {
+        margin: 64px 50px 0px 50px;
+        height: 100%;
+    }
+
+    #faq {
+        margin: 64px 50px 0px 50px;
+        height: 100%;
+    }
+
+    .question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        margin-top: 24px;
+        padding-bottom: 12px;
+        cursor: pointer;
+        border-bottom: 1px solid #1A1A1A;
+    }
+
+    .answer {
+        margin-top: 12px;
+        display: none;
+        font-size: 14px;
+        width: 60%;
+        line-height: 24px;
     }
 
     #new-projects {
@@ -266,8 +307,8 @@
         height: auto;
         background-color: #ffffff;
         color: #1A1A1A;
-        box-shadow: 0px 0px 12px #e5e5e5;
-        border-radius: 12px;
+        box-shadow: 0px 0px 12px #f5f5f5;
+        border-radius: 0px;
         margin: 6px;
 
     }
@@ -275,7 +316,6 @@
     .card-image {
         width: 100%;
         height: auto;
-        border-radius: 12px 12px 0px 0px;
     }
 
     .caption {
@@ -340,15 +380,16 @@
     
     .button-primary {
         background-color: #99DDFF;
+        display: inline-block;
         font-size: 14px;
         font-weight: 500;
         width: 248px;
-        color: #ffffff;
+        color: #fff;
         border-color: #99DDFF;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         padding: 12px 24px 12px 24px;
-        border-radius: 12px;
+        border-radius: 0px;
         cursor: pointer;
         margin-left: 12px;
     }
@@ -358,8 +399,8 @@
         color: #ffffff;
         font-size: 14px;
         font-weight: 500;
-        border-color: #99DDFF;
-        border-width: 2px;
+        border-color: #8AC7E5;
+        border-width: 1px;
         border-style: solid;
         padding: 12px 24px 12px 24px;
         box-shadow: 0px 0px 0px #8AC7E5;
@@ -374,10 +415,10 @@
         font-size: 14px;
         font-weight: 500;
         border-color: #99DDFF;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         padding: 12px 24px 12px 24px;
-        border-radius: 12px;
+        border-radius: 0px;
         cursor: pointer;
     }
     
@@ -386,8 +427,8 @@
         color: #ffffff;
         font-size: 14px;
         font-weight: 500;
-        border-color: #99DDFF;
-        border-width: 2px;
+        border-color: #8AC7E5;
+        border-width: 1px;
         border-style: solid;
         padding: 12px 24px 12px 24px;
         cursor: pointer;
@@ -420,7 +461,7 @@
     
     .wrapping {
         display: flex;
-        padding: 24px 0px;
+        padding: 12px 0px;
         justify-content: space-between;
         align-items: top;
     }
@@ -489,9 +530,10 @@
     .supporting-picture {
         width: 80%;
         height: auto;
-        margin-left: 64px;
+        margin-left: -50px;
         margin-top: -48px;
         border-radius: 0px;
+        border: 0px solid #1A1A1A
     }
     
     .supporting-picture-2 {
@@ -507,7 +549,8 @@
         min-height: 800px;
         max-height: 900px;
         object-fit: cover;
-        border-radius: 0px 0px 0% 0%;
+        border-radius: 0px 0px 0% 25%;
+        border: 0px solid #1A1A1A;
     }
 
     .hero-mobile {
@@ -576,6 +619,24 @@
         border-color: #ffffff;
     }
     
+    .icon-arrow {
+        margin: 0px 0px 0px 12px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .open {
+        margin: 0px 0px 0px 12px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .close {
+        margin: 0px 0px 0px 12px;
+        height: 24px;
+        width: 24px;
+    }
+
     .nav-bottom {
         display: flex;
         align-items: center;
@@ -773,7 +834,10 @@
     }
     
     .box {
-        margin: 12px;
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #1A1A1A;
+        margin: 0px 6px;
     }
     
     .popup {
@@ -812,6 +876,13 @@
     .vc {
         width: 100%;
     }
+
+    .line {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0px 12px 0px;
+        border-bottom: 1px solid #1A1A1A;
+    }
 }
 
 @media (max-width: 959px) {
@@ -828,7 +899,7 @@
     }
     
     header {
-        background-color: hsla(0, 0%, 100%, 0.2);
+        background-color: hsla(0, 0%, 100%, 0.5);
         padding: 12px 20px;
         top: 0;
         width: 100%;
@@ -840,10 +911,10 @@
 /*Headings*/
 
     .display {
-        font-size: 32px;
-        line-height: 48px;
-        font-weight: 300;
-        letter-spacing: 0em;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        letter-spacing: normal;
         text-transform: none;
         text-align: left;
     }
@@ -885,6 +956,8 @@
     }
     
     span {
+        font-size: 32px;
+        text-transform: uppercase;
         color: #99DDFF;
     }
     
@@ -923,14 +996,14 @@
     }
     
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         width: auto;
         margin: 0px;
         color: #8AC7E5;
     }
     
     a:visited {
-        color: #ffffff;
+        color: #1A1A1A;
     }
 
     figure {
@@ -1006,6 +1079,42 @@
         background-repeat: no-repeat;
         height: 900px;
     }
+
+    #about-me {
+        margin: 64px 20px;
+    }
+
+    #portfolio {
+        margin: 64px 20px;
+    }
+
+    #services {
+        margin: 64px 20px;
+    }
+
+    #faq {
+        margin: 64px 20px;
+    }
+
+    .question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        margin-top: 24px;
+        padding-bottom: 12px;
+        cursor: pointer;
+        border-bottom: 1px solid #1A1A1A;
+    }
+
+    .answer {
+        margin-top: 12px;
+        display: none;
+        font-size: 14px;
+        width: 100%;
+        line-height: 24px;
+    }
+
     
     #footer {
         align-items: center;
@@ -1050,10 +1159,10 @@
         font-weight: 500;
         color: #ffffff;
         border-color: #99DDFF;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         padding: 8px 16px;
-        border-radius: 12px;
+        border-radius: 0px;
         cursor: pointer;
         margin-left: 12px;
     }
@@ -1064,7 +1173,7 @@
         font-size: 14px;
         font-weight: 500;
         border-color: #99DDFF;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         padding: 8px 16px;
         box-shadow: 0px 0px 0px #8AC7E5;
@@ -1078,10 +1187,10 @@
         font-size: 14px;
         font-weight: 500;
         border-color: #99DDFF;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         padding: 8px 16px;
-        border-radius: 12px;
+        border-radius: 0px;
         cursor: pointer;
     }
     
@@ -1091,7 +1200,7 @@
         font-size: 14px;
         font-weight: 500;
         border-color: #99DDFF;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         padding: 8px 16px;
         cursor: pointer;
@@ -1155,7 +1264,7 @@
     
     .supporting-picture {
         width: 100%;
-        border-radius: 12px;
+        border-radius: 0px;
     }
     
     .hero-picture {
@@ -1167,7 +1276,7 @@
         background-size: cover;
         background-color: #f5f5f5;
         background-position-y: 30%;
-        border-radius: 0% 0% 0% 0%;
+        border-radius: 0% 0% 25% 0%;
         width: 100%;
         height: 482px;
         margin-top: -96px;
@@ -1461,7 +1570,10 @@
     }
     
     .box {
-        margin: 12px;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #1A1A1A;
+        margin-bottom: 12px;
     }
 
     .sertificate {
@@ -1633,4 +1745,10 @@
         display: block;
     }
 
+    .line {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0px 12px 0px;
+        border-bottom: 1px solid #1A1A1A;
+    }
 }
