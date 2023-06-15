@@ -24,11 +24,25 @@
                     window.location.href = "eng/index.html";
                 }
             }
+            
+            function toggleAnswer(questionNumber) {
+                var answer = document.getElementById("answer" + questionNumber);
+                var icon = document.getElementById("icon" + questionNumber);
+
+                if (answer.style.display === "none") {
+                    answer.style.display = "block";
+                    icon.style.transform = "rotate(45deg)";
+                } else {
+                    answer.style.display = "none";
+                    icon.style.transform = "rotate(0deg)";
+                }
+            }            
         </script>
         <title>Кирилл Мелихов - Продуктовый дизайнер</title>
     </head>
     <body>
-<!--This is header-->
+
+<!--Header-->
         
         <header>
             <div id="logo">
@@ -81,7 +95,7 @@
             <div class="wrapping">
                 <div class="col-1">
                     <div class="hero-mobile"></div>
-                    <h1 class="display">Современный подход к дизайну <span>цифровых</span> продуктов</h1>
+                    <h1 class="display">Современный подход к дизайну <span>DIGITAL</span> продуктов</h1>
                     <div class="description">
                         <p>Как профессиональный продуктовый дизайнер, я увлечен созданием инновационных и эффектных цифровых продуктов, которые не только удовлетворяют потребности пользователей, но и способствуют росту бизнеса.</p>
                         <p>Моя цель - помочь бизнесу создавать продукты, которые выделяются на переполненном рынке и реально меняют жизнь людей. Если вы ищете дизайнера, который сможет воплотить ваши идеи в жизнь и помочь вам достичь ваших бизнес-целей, я здесь, чтобы помочь.</p>
@@ -97,6 +111,103 @@
                     <img class="hero-picture" src="resourses/images/hero-picture.jpg" alt="">
                 </div>
             </div>
+        </section>
+
+<!--Portfolio section-->
+
+        <section id="portfolio">
+            <h2>Портфолио</h2>
+            <a href="cases/petrogradskaya.html"><div class="line">
+                    <h4>Булочная на Петроградской</h4>
+                    <img class="icon-arrow" src="resourses/icons/arrow.svg" alt="">
+            </div></a>
+            <a href="cases/nutcracker.html"><div class="line">
+                <h4>Nutcracker</h4>
+                <img class="icon-arrow" src="resourses/icons/arrow.svg" alt="">
+            </div></a>
+            <a href="cases/sparta.html"><div class="line">
+                <h4>Sparta</h4>
+                <img class="icon-arrow" src="resourses/icons/arrow.svg" alt="">
+            </div></a>
+            <a href="cases/under-armour.html"><div class="line">
+                <h4>Under Armour</h4>
+                <img class="icon-arrow" src="resourses/icons/arrow.svg" alt="">
+            </div></a>
+        </section>
+
+<!--About me section-->
+
+        <section id="about-me">
+            <h2>Обо мне</h2>
+            <div class="wrapping">
+                <div class="col-1">
+                    <img class="supporting-picture" src="resourses/images/secondary.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <p class="description">Меня зовут Кирилл, я продуктовый дизайнер.<br />На текущий момент мой реальный опыт работы в отрасли составляет почти 2 года.</p>
+                    <p class="description">Я увлечен дизайном и верю, что он способен изменить то, как люди взаимодействуют с технологиями. Мой подход к дизайну ориентирован на пользователя, что означает, что я фокусируюсь на понимании их потребностей и создании интуитивно понятного, эстетически приятного и функционального дизайна, который учитывает их болевые точки.</p>
+                    <p class="description">Я также немного рисую, люблю кино и оркестровую музыку. Я считаю, что важно сохранять вдохновение и интерес к окружающему миру, поскольку это позволяет мне привносить свежие перспективы и идеи в мою дизайнерскую работу.</p>
+                    <p class="description">В настоящее время я работаю на фрилансе. Стремлюсь создавать инновационные, интуитивно понятные и удобные в использовании продукты. Я всегда открыт для изучения новых возможностей, и был бы рад услышать от вас, если у вас есть проект, над которым вы хотели бы сотрудничать.</p>
+                    <p class="description">Пожалуйста, не стесняйтесь обращаться ко мне по адресу <a href="mailto:melikhov.design@gmail.com">melikhov.design@gmail.com</a>, чтобы обсудить проект или просто поздороваться!</p>
+                </div>
+            </div>
+        </section>
+
+<!--Services section-->
+
+        <section id="services">
+            <h2>Услуги</h2>
+            <div class=" wrapping">
+                <div class="box">
+                    <h4>UX/UI Design</h4>
+                    <p class="description">Web</p>
+                    <p class="description">Mobile (Android / iOS)</p>
+                    <p class="description">Watch OS</p>
+                </div>
+                <div class="box">
+                    <h4>UX Research</h4>
+                    <p class="description">Анализ конкурентов</p>
+                    <p class="description">Исследование пользователей</p>
+                    <p class="description">Создание пользовательских путешествий</p>
+                    <p class="description">Анализ данных и метрик</p>
+                </div>
+                <div class="box">
+                    <h4>Web разработка</h4>
+                    <p class="description">Разработка на CMS (Tilda, WordPress, др.)</p>
+                    <p class="description">Ручная верстка</p>
+                </div>
+                <div class="box">
+                    <h4>Прочее</h4>
+                    <p class="description">Разработка фирменного стиля</p>
+                </div>
+            </div>
+        </section>
+
+<!--FAQ section-->
+
+        <section id="faq">
+            <h2>Часто задаваемые вопросы</h2>            
+            <div class="question" onclick="toggleAnswer(1)">
+                <h4>Сколько времени занимает разработка дизайна?</h4>
+                <img id="icon1" class="open" src="resourses/icons/plus.svg" alt="">
+            </div>
+            <div class="answer" id="answer1">Время, необходимое для разработки дизайна, может варьироваться в зависимости от сложности проекта. Я стремлюсь выполнить работу в сроки, установленные совместно с клиентом, и обеспечить высокое качество результата.</div>
+            <div class="question" onclick="toggleAnswer(2)">
+            <h4>Какие данные или материалы мне требуется предоставить, чтобы вы смогли начать работу над проектом?</h4>
+            <img id="icon2" class="open" src="resourses/icons/plus.svg" alt="">
+            </div>
+            <div class="answer" id="answer2">Для начала работы мне понадобится информация о вашем бизнесе, целевой аудитории, конкурентном окружении и ваших требованиях к проекту. Любые доступные данные, логотипы, бренд-руководства и другие ресурсы также будут полезны.</div>
+            <div class="question" onclick="toggleAnswer(3)">
+                <h4>Каковы цены и условия оплаты?</h4>
+                <img id="icon3" class="open" src="resourses/icons/plus.svg" alt="">
+            </div>
+            <div class="answer" id="answer3">Цены услуг зависят от объема работы и сложности проекта. Я предоставляю индивидуальные предложения для каждого клиента. Что касается условий оплаты, то я обычно работаю на предоплатной основе или согласно майлстоунам проекта. Чтобы получить точную информацию о ценах, свяжитесь со мной для бесплатной консультации.</div>
+
+            <div class="question" onclick="toggleAnswer(4)">
+                <h4>Какие форматы файлов вы предоставляете после завершения проекта?</h4>
+                <img id="icon4" class="open" src="resourses/icons/plus.svg" alt="">
+            </div>
+            <div class="answer" id="answer4">Я предоставляю файлы в различных форматах, включая исходные файлы дизайна (например, PSD, Sketch, Figma), графические файлы (например, PNG, JPEG) и другие форматы, которые удовлетворяют потребностям клиента.</div>
         </section>
 
 <!--Footer-->
