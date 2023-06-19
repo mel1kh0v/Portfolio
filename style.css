@@ -2208,7 +2208,7 @@
     }
 
     .social-media-top {
-        display: flex;
+        display: none;
         justify-content: center;
     }
     
@@ -2626,7 +2626,7 @@
     }
 
     .caption {
-        margin-top: 12px;
+        padding-top: 12px;
         font-size: 14px;
         line-height: 18px;
         font-weight: 400;
