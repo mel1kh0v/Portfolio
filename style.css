@@ -1731,6 +1731,7 @@
     }
 
     .card {
+        padding: 12px;
         text-align: left;
         display: block;
         width: 100%;
@@ -1743,7 +1744,7 @@
     }
 
     .card-image {
-        display: inline;
+        display: none;
         max-width: 100%;
         height: 100%;
         align-self: top;
@@ -2605,19 +2606,24 @@
     }
 
     .card {
+        padding: 12px;
+        text-align: left;
+        display: block;
         width: 100%;
         height: auto;
         background-color: #ffffff;
         color: #1A1A1A;
         border-radius: 12px;
         margin-bottom: 12px;
-        border-bottom: 1px solid #f5f5f5;
+        box-shadow: 0px 0px 12px #f5f5f5;
     }
 
     .card-image {
-        width: 100%;
-        height: auto;
-        border-radius: 0px;
+        display: none;
+        max-width: 100%;
+        height: 100%;
+        align-self: top;
+        border-radius: 12px 12px 0px 0px;
     }
 
     .caption {
