@@ -21,6 +21,7 @@
         display: flex;
         position: fixed;
         z-index: 10;
+        justify-content: space-between;
     }
     
 /*Headings*/
@@ -88,8 +89,9 @@
     
     span {
         font-size: 48px;
+        font-weight: 800;
         text-transform: uppercase;
-        color: #99DDFF;
+        color: #959595;
     }
     
     ul {
@@ -98,22 +100,22 @@
     }
     
     .nav-item {
-    
         color: #1A1A1A;
-        padding: 12px 12px;
-        display: inline-flex;
+        padding: 0px 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        display: inline;
         align-items: center;
         font-size: 14px;
-        border-bottom: 2px solid hsla(0, 0%, 100%, 0);
     }
     
     .nav-item:hover {
-    
+        color: #959595;
         padding: 12px 12px;
-        display: inline-flex;
-        color: #99DDFF;
+        line-height: 24px;
+        display: inline;
         cursor: pointer;
-        border-bottom: 2px solid hsla(0, 0%, 100%, 0)
     }
     
     #menu {
@@ -136,14 +138,14 @@
         text-decoration: none;
         width: auto;
         margin: 0px;
-        color: #99DDFF;
+        color: #66B2FF;
     }
     
     a:hover {
         text-decoration: none;
         width: auto;
         margin: 0px;
-        color: #8AC7E5;
+        color: #3399FF;
     }
     
     a:visited {
@@ -154,40 +156,40 @@
         display: flex;
         height: 42px;
         align-items: center;
-        width: 100%;
     }
     
     .top-nav {
         display: flex;
         align-items: center;
         height: 42px;
-        width: 2000px;
+        border-radius: 0px;
+        width: fit-content;
         justify-content: right;
         
     }
     
     #hero {
-        margin: 64px 0px 0px 50px;
+        margin: 64px 0px 64px 50px;
         height: 100%;
     }
 
     #about-me {
-        margin: 64px 50px 0px 50px;
+        margin: 64px 50px 64px 50px;
         height: 100%;
     }
 
     #portfolio {
-        margin: 64px 50px 0px 50px;
+        margin: 64px 50px 64px 50px;
         height: 100%;
     }
 
     #services {
-        margin: 64px 50px 0px 50px;
+        margin: 64px 50px 64px 50px;
         height: 100%;
     }
 
     #faq {
-        margin: 64px 50px 0px 50px;
+        margin: 64px 50px 64px 50px;
         height: 100%;
     }
 
@@ -346,9 +348,9 @@
     #footer {
         align-items: center;
         padding: 24px 50px 24px 50px;
-        background-color: #fff;
+        background-color: #252525;
         margin: 0px 0px 0px 0px;
-        color: #1A1A1A;
+        color: #ffffff;
     }
     
     .name-container {
@@ -358,6 +360,7 @@
     .name {
         font-size: 14px;
         line-height: 24px;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         margin: 0px;
     }
@@ -382,33 +385,32 @@
     }
     
     .button-primary {
-        background-color: #99DDFF;
+        background-color: #1A1A1A;
         display: inline-block;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
         width: 248px;
         color: #fff;
-        border-color: #99DDFF;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 0px;
+        border-radius: 24px;
         cursor: pointer;
         margin-left: 12px;
     }
     
     .button-primary:hover {
-        background-color: #8AC7E5;
+        background-color: #959595;
         color: #ffffff;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-color: #8AC7E5;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        box-shadow: 0px 0px 0px #8AC7E5;
         cursor: pointer;
         margin-left: 12px;
     }
@@ -416,26 +418,26 @@
     .button-secondary {
         background-color: #ffffff;
         width: 248px;
-        color: #99DDFF;
+        color: #1A1A1A;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-color: #99DDFF;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 0px;
+        border-radius: 24px;
         cursor: pointer;
     }
     
     .button-secondary:hover {
-        background-color: #8AC7E5;
+        background-color: #959595;
         color: #ffffff;
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
-        border-color: #8AC7E5;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         cursor: pointer;
@@ -448,7 +450,7 @@
     }
     
     .chip {
-        background-color: #EBF8FF;
+        background-color: #f5f5f5;
         color: #1A1A1A;
         font-size: 14px;
         line-height: 24px;
@@ -556,8 +558,7 @@
         min-height: 800px;
         max-height: 900px;
         object-fit: cover;
-        border-radius: 0px 0px 0% 25%;
-        border: 0px solid #1A1A1A;
+        border-radius: 0%;
     }
 
     .hero-mobile {
@@ -579,6 +580,7 @@
     .sertificate {
         width: 33%;
         height: auto;
+        border: 4px double #1A1A1A;
     }
     
     .sitemap {
@@ -613,17 +615,12 @@
         margin: 0px 0px 0px 12px;
         height: 36px;
         width: 36px;
-        border-width: 4px 0px 0px 4px;
-        border-color: #8AC7E5;
-        border-style: solid;
     }
     
     .icon:hover {
         margin: 0px 0px 0px 12px;
         height: 36px;
         width: 36px;
-        border: 4px;
-        border-color: #ffffff;
     }
     
     .icon-arrow {
@@ -690,27 +687,32 @@
     }
     
     .active-page {
-        padding: 12px 12px;
-        display: inline-flex;
-        color: #99DDFF;
+        background-color: #1A1A1A;
+        color: #fff;
+        padding: 4px 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        display: inline;
+        align-items: center;
         font-size: 14px;
-        cursor: pointer;
-        border-bottom: 2px solid #99DDFF;
     }
     
     #language {
         background-color: hsla(0, 0%, 100%, 0);
-        border: 0px;
+        border: 2px solid hsla(0, 0%, 100%, 0);
         color: #1A1A1A;
         font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         margin-left: 12px;
     }
     
     #language:hover {
         background-color: hsla(0, 0%, 100%, 0);
-        border: 0px;
-        color: #99DDFF;
+        border: 2px solid #959595;
+        color: #959595;
         font-size: 14px;
         text-transform: uppercase;
         margin-left: 12px;
@@ -915,6 +917,7 @@
         display: flex;
         position: fixed;
         z-index: 10;
+        justify-content: space-between;
     }
     
 /*Headings*/
@@ -966,8 +969,9 @@
     
     span {
         font-size: 32px;
+        font-weight: 800;
         text-transform: uppercase;
-        color: #99DDFF;
+        color: #1a1a1a;
     }
     
     ul {
@@ -978,37 +982,39 @@
     }
     
     .nav-item {
-    
         color: #1A1A1A;
-        padding: 20px 0px;
-        display: block;
-        text-align: left;
+        padding: 0px 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        display: inline;
+        align-items: center;
         font-size: 14px;
-        border-bottom: #e5e5e5 solid 1px;
     }
     
     .nav-item:hover {
-    
-        padding: 20px 20px;
-        color: #99DDFF;
-        display: block;
-        text-align: left;
+        color: #959595;
+        padding: 0px 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        display: inline;
+        align-items: center;
         font-size: 14px;
-        border-bottom: #99DDFF solid 1px;
     }
     
     a {
         text-decoration: none;
         width: auto;
         margin: 0px;
-        color: #99DDFF;
+        color: #66B2FF;
     }
     
     a:hover {
         text-decoration: none;
         width: auto;
         margin: 0px;
-        color: #8AC7E5;
+        color: #3399FF;
     }
     
     a:visited {
@@ -1052,15 +1058,17 @@
     
     #menu {
         display: none;
+        height: 100%;
         position: fixed;
-        bottom: 0;
         left: 0;
+        bottom: 0;
         width: 100%;
         height: fit-content;
-        background-color: hsla(0, 0%, 100%, 1);
+        background-color: #ffffff;
         justify-content: center;
-        box-shadow: -1px 0px 12px 0px #f5f5f5;
-        padding: 24px
+        text-align: center;
+        padding: 24px;
+        border-top: #1A1A1A solid 1px;
     }
 
     .menu-button {
@@ -1127,7 +1135,10 @@
     
     #footer {
         align-items: center;
-        margin: 64px 35px 24px 35px;
+        padding: 24px 35px 24px 35px;
+        background-color: #252525;
+        margin: 0px 0px 0px 0px;
+        color: #ffffff;
     }
     
     .name-container {
@@ -1137,6 +1148,7 @@
     .name {
         font-size: 14px;
         line-height: 24px;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         margin: 0px;
     }
@@ -1163,33 +1175,32 @@
     }
     
     .button-primary {
-        background-color: #99DDFF;
+        background-color: #1A1A1A;
         display: inline-block;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
         width: 196px;
         color: #fff;
-        border-color: #99DDFF;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 0px;
+        border-radius: 24px;
         cursor: pointer;
         margin-left: 12px;
     }
     
     .button-primary:hover {
-        background-color: #8AC7E5;
+        background-color: #959595;
         color: #ffffff;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-color: #8AC7E5;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        box-shadow: 0px 0px 0px #8AC7E5;
         cursor: pointer;
         margin-left: 12px;
     }
@@ -1197,26 +1208,26 @@
     .button-secondary {
         background-color: #ffffff;
         width: 196px;
-        color: #99DDFF;
+        color: #1A1A1A;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-color: #99DDFF;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 0px;
+        border-radius: 24px;
         cursor: pointer;
     }
     
     .button-secondary:hover {
-        background-color: #8AC7E5;
+        background-color: #959595;
         color: #ffffff;
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
-        border-color: #8AC7E5;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         cursor: pointer;
@@ -1229,7 +1240,7 @@
     }
     
     .chip {
-        background-color: #EBF8FF;
+        background-color: #f5f5f5;
         color: #1A1A1A;
         font-size: 12px;
         font-weight: 500;
@@ -1250,8 +1261,7 @@
 
     .wrapping {
         display: block;
-        padding: 12px 0px;
-        align-items: top;
+        text-align: center;
     }
     
     .col-1 {
@@ -1295,7 +1305,7 @@
     
     .hero-picture {
         display: none;
-        border-radius: 0% 0% 0% 25%;
+        border-radius: 0%;
         margin-left: 35px;
         margin-top: -92px;
         width: 100%;
@@ -1307,7 +1317,7 @@
         background-size: cover;
         background-color: #f5f5f5;
         background-position-y: 50%;
-        border-radius: 0% 0% 25% 0%;
+        border-radius: 0%;
         width: 100%;
         height: 428px;
         margin-top: -86px;
@@ -1320,11 +1330,7 @@
         border-bottom: 1px solid #f5f5f5;
         margin-bottom: 12px;
     }
-    
-    .sertificates {
-        margin: 24px 0px 24px 0px;
-    }
-    
+
     .sitemap {
         display: flex;
         margin: 24px 0px 24px 0px;
@@ -1357,17 +1363,12 @@
         margin: 0px 12px 0px 0px;
         height: 36px;
         width: 36px;
-        border-width: 4px 0px 0px 4px;
-        border-color: #8AC7E5;
-        border-style: solid;
     }
     
     .icon:hover {
         margin: 0px 12px 0px 0px;
         height: 36px;
         width: 36px;
-        border: 4px;
-        border-color: #ffffff;
     }
     
     .nav-bottom {
@@ -1413,11 +1414,14 @@
     }
     
     .active-page {
-        padding: 12px 12px;
-        display: inline-flex;
-        color: #99DDFF;
-        cursor: pointer;
-        border-bottom: 1px solid #99DDFF;
+        color: #1A1A1A;
+        padding: 0px 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        display: inline;
+        align-items: center;
+        font-size: 14px;
     }
     
     .content {
@@ -1603,9 +1607,8 @@
     }
 
     .sertificate {
-        width: 33%;
-        float: left;
-        margin-bottom: 24px;
+        width: 32%;
+        border: 4px double #1A1A1A;
     }
 
     .popup {
@@ -1856,8 +1859,9 @@
     
     span {
         font-size: 32px;
+        font-weight: 800;
         text-transform: uppercase;
-        color: #99DDFF;
+        color: #1a1a1a;
     }
     
     ul {
@@ -1868,37 +1872,41 @@
     }
     
     .nav-item {
-    
+        margin-bottom: 24px;
         color: #1A1A1A;
-        padding: 20px 0px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
         display: block;
-        text-align: left;
+        align-items: center;
         font-size: 14px;
-        border-bottom: #e5e5e5 solid 1px;
     }
     
-    .nav-item:hover {
-    
-        padding: 20px 20px;
-        color: #99DDFF;
+    .nav-item:active {
+        background-color: #1a1a1a;
+        margin-bottom: 24px;
+        padding-left: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 24px;
         display: block;
-        text-align: left;
+        align-items: center;
         font-size: 14px;
-        border-bottom: #99DDFF solid 1px;
     }
     
     a {
         text-decoration: none;
         width: auto;
         margin: 0px;
-        color: #99DDFF;
+        color: #66B2FF;
     }
     
     a:hover {
         text-decoration: none;
         width: auto;
         margin: 0px;
-        color: #8AC7E5;
+        color: #3399FF;
     }
     
     a:visited {
@@ -1947,9 +1955,9 @@
         left: 0;
         width: 100%;
         height: fit-content;
-        background-color: hsla(0, 0%, 100%, 1);
+        background-color: #ffffff;
         justify-content: center;
-        box-shadow: -1px 0px 12px 0px #f5f5f5;
+        border-top: #1A1A1A 1px solid;
         padding: 24px
     }
 
@@ -2017,7 +2025,10 @@
     
     #footer {
         align-items: center;
-        margin: 64px 20px 24px 20px;
+        padding: 24px 35px 24px 35px;
+        background-color: #252525;
+        margin: 0px 0px 0px 0px;
+        color: #ffffff;
     }
     
     .name-container {
@@ -2027,6 +2038,7 @@
     .name {
         font-size: 14px;
         line-height: 24px;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         margin: 0px;
     }
@@ -2053,33 +2065,32 @@
     }
     
     .button-primary {
-        background-color: #99DDFF;
+        background-color: #1A1A1A;
         display: inline-block;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
         width: 164px;
         color: #fff;
-        border-color: #99DDFF;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 0px;
+        border-radius: 24px;
         cursor: pointer;
         margin-left: 12px;
     }
     
     .button-primary:hover {
-        background-color: #8AC7E5;
+        background-color: #959595;
         color: #ffffff;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-color: #8AC7E5;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        box-shadow: 0px 0px 0px #8AC7E5;
         cursor: pointer;
         margin-left: 12px;
     }
@@ -2087,26 +2098,26 @@
     .button-secondary {
         background-color: #ffffff;
         width: 164px;
-        color: #99DDFF;
+        color: #1A1A1A;
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-color: #99DDFF;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 0px;
+        border-radius: 24px;
         cursor: pointer;
     }
     
     .button-secondary:hover {
-        background-color: #8AC7E5;
+        background-color: #959595;
         color: #ffffff;
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
-        border-color: #8AC7E5;
-        border-width: 1px;
+        border-width: 4px;
+        border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         cursor: pointer;
@@ -2119,7 +2130,7 @@
     }
     
     .chip {
-        background-color: #EBF8FF;
+        background-color: #f5f5f5;
         color: #1A1A1A;
         font-size: 12px;
         font-weight: 500;
@@ -2182,7 +2193,7 @@
         background-size: cover;
         background-color: #f5f5f5;
         background-position-y: 30%;
-        border-radius: 0% 0% 25% 0%;
+        border-radius: 0%;
         width: 100%;
         height: 482px;
         margin-top: -96px;
@@ -2195,11 +2206,6 @@
         border-bottom: 1px solid #f5f5f5;
         margin-bottom: 12px;
     }
-    
-    .sertificates {
-        margin: 24px 0px 24px 0px;
-    }
-    
     .sitemap {
         display: flex;
         margin: 24px 0px 24px 0px;
@@ -2232,17 +2238,12 @@
         margin: 0px 12px 0px 0px;
         height: 36px;
         width: 36px;
-        border-width: 4px 0px 0px 4px;
-        border-color: #8AC7E5;
-        border-style: solid;
     }
     
     .icon:hover {
         margin: 0px 12px 0px 0px;
         height: 36px;
         width: 36px;
-        border: 4px;
-        border-color: #ffffff;
     }
     
     .nav-bottom {
