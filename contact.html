@@ -21,31 +21,31 @@
                 var select = document.getElementById("language");
                 var selectedOption = select.options[select.selectedIndex];
                 if (selectedOption.value === "Eng") {
-                    window.location.href = "eng/contact.html";
+                    window.location.href = "eng/about.html";
                 }
             }
         </script>
-        <title>Кирилл Мелихов - Продуктовый дизайнер | Контакты</title>
+        <title>Кирилл Мелихов - Продуктовый дизайнер | Обо мне</title>
     </head>
     <body>
-        
-<!--This is header-->
+
+<!--Header desktop-->
         
         <header>
             <div id="logo">
                 <a href="index.html"><img src="resourses/interface/logo.svg" alt="logo"/></a>
                 <div class="name-container">
-                    <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->    
-                </div>           
+                    <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
             </div>
             <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="resourses/icons/burger-menu.svg" alt="Меню" width="36px" height="auto"></div>
             <div class="top-nav">
                 <ul>
-                    <a href="cases/index.html"><li class="nav-item">Портфолио</li></a><a href="about.html"><li class="nav-item">Обо мне</li></a><a href="articles/index.html"><li class="nav-item">Статьи</li></a><a href="contact.html"><li class="active-page">Контакты</li></a>
+                    <a href="cases/index.html"><li class="nav-item">Портфолио</li></a><li class="active-page">Обо мне</li><a href="articles/index.html"><li class="nav-item">Статьи</li></a><a href="contact.html"><li class="nav-item">Контакты</li></a>
                 </ul>
                 <div class="language">
                     <select name="language" id="language" onchange="changeLanguage()">
-                        <option value="Ru" selected>Ru</option>
+                        <option value="Ru">Ru</option>
                         <option value="Eng">Eng</option>
                     </select>
                 </div>
@@ -57,32 +57,39 @@
                 <a href="cases/index.html"><li class="nav-item">Портфолио</li></a><a href="about.html"><li class="nav-item">Обо мне</li></a><a href="articles/index.html"><li class="nav-item">Статьи</li></a><a href="contact.html"><li class="nav-item">Контакты</li></a>
             </ul>
             <div class="language">
-                <a href="eng/contact.html"><p class="description">English</p></a><a href="contact.html"><p class="description">Русский</p></a>
+                <a href="eng/about.html"><p class="description">English</p></a><a href="about.html"><p class="description">Русский</p></a>
             </div>
         </div>
 
 <!--Main section-->
 
-        <section id="contact">
-            <h1>Контакты</h1>
-            <div class="vc">
-                <div class="content">
-                    <h2 class="display">Я открыт для сотрудничества!</h2>
-                    <p class="description">Электронная почта: <a href="mailto: melikhov.design@gmail.com">melikhov.design@gmail.com</a></p>
-                    <p class="description">Телефон: +7 (915) 696 65 20</p>
+        <section id="main">
+            <h1>Обо мне</h1>
+            <div class="wrapping">
+                <div class="col-1">
+                    <img class="supporting-picture" src="resourses/images/secondary.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <p class="description">Меня зовут Кирилл, я продуктовый дизайнер.<br />На текущий момент мой реальный опыт работы в отрасли составляет почти 2 года.</p>
+                    <p class="description">Я увлечен дизайном и верю, что он способен изменить то, как люди взаимодействуют с технологиями. Мой подход к дизайну ориентирован на пользователя, что означает, что я фокусируюсь на понимании их потребностей и создании интуитивно понятного, эстетически приятного и функционального дизайна, который учитывает их болевые точки.</p>
+                    <p class="description">Я также немного рисую, люблю кино и оркестровую музыку. Я считаю, что важно сохранять вдохновение и интерес к окружающему миру, поскольку это позволяет мне привносить свежие перспективы и идеи в мою дизайнерскую работу.</p>
+                    <p class="description">В настоящее время я работаю на фрилансе. Стремлюсь создавать инновационные, интуитивно понятные и удобные в использовании продукты. Я всегда открыт для изучения новых возможностей, и был бы рад услышать от вас, если у вас есть проект, над которым вы хотели бы сотрудничать.</p>
+                    <p class="description">Пожалуйста, не стесняйтесь обращаться ко мне по адресу <a href="mailto:melikhov.design@gmail.com">melikhov.design@gmail.com</a>, чтобы обсудить проект или просто поздороваться!</p>
                 </div>
             </div>
-            
+            <div class="sertificates">
+                <h2>Награды и сертификаты</h2>
+                <div class="wrapping">
+                    <img class="sertificate" src="resourses/images/sertificates/diploma1.jpg" alt="">
+                    <img class="sertificate" src="resourses/images/sertificates/diploma2.jpg" alt="">
+                    <img class="sertificate" src="resourses/images/sertificates/diploma3.jpg" alt="">
+                </div>
+            </div>
         </section>
 
 <!--Footer-->
 
         <section id="footer">
-            <!--<div class="banner-cta">
-                <h2>Я открыт для сотрудничества</h2>
-                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
-                <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
-            </div>-->
             <div class="sitemap">
                 <div class="social-media">
                     <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img src="resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
