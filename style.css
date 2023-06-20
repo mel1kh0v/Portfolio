@@ -27,9 +27,9 @@
 /*Headings*/
 
     .display {
-        font-size: 32px;
-        line-height: 48px;
-        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        font-weight: 300;
         letter-spacing: normal;
         text-transform: none;
         text-align: left;
@@ -88,10 +88,12 @@
     }
     
     span {
-        font-size: 48px;
+        font-size: 64px;
+        line-height: 72px;
         font-weight: 800;
         text-transform: uppercase;
         color: #1a1a1a;
+        border-bottom: 2px solid #1A1A1A;
     }
     
     ul {
@@ -923,9 +925,9 @@
 /*Headings*/
 
     .display {
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 300;
         letter-spacing: normal;
         text-transform: none;
         text-align: left;
@@ -968,10 +970,11 @@
     }
     
     span {
-        font-size: 32px;
+        font-size: 48px;
         font-weight: 800;
         text-transform: uppercase;
         color: #1a1a1a;
+        border-bottom: 2px solid #1A1A1A;
     }
     
     ul {
@@ -1813,9 +1816,9 @@
 /*Headings*/
 
     .display {
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 300;
         letter-spacing: normal;
         text-transform: none;
         text-align: left;
@@ -1858,10 +1861,11 @@
     }
     
     span {
-        font-size: 32px;
+        font-size: 48px;
         font-weight: 800;
         text-transform: uppercase;
         color: #1a1a1a;
+        border-bottom: 2px solid #1A1A1A;
     }
     
     ul {
