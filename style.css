@@ -1,6 +1,6 @@
 /*Desktop*/
 
-@media (min-width: 769px) {
+@media (min-width: 810px) {
 
     * {
         box-sizing: border-box;
@@ -898,7 +898,7 @@
 
 /*Tablet*/
 
-@media (min-width: 481px) and (max-width:768px) {
+@media (min-width: 481px) and (max-width:809px) {
 
     * {
         box-sizing: border-box;
