@@ -392,11 +392,11 @@
         font-weight: 500;
         width: 248px;
         color: #fff;
-        border-width: 4px;
-        border-color: #e5e5e5;
+        border-width: 2px;
+        border-color: #1A1A1A;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 24px;
+        border-radius: 36px;
         cursor: pointer;
         margin-left: 12px;
     }
@@ -407,7 +407,7 @@
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-width: 4px;
+        border-width: 2px;
         border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
@@ -422,11 +422,11 @@
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-width: 4px;
-        border-color: #e5e5e5;
+        border-width: 2px;
+        border-color: #1A1A1A;
         border-style: solid;
         padding: 8px 16px 8px 16px;
-        border-radius: 24px;
+        border-radius: 36px;
         cursor: pointer;
     }
     
@@ -436,7 +436,7 @@
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
-        border-width: 4px;
+        border-width: 2px;
         border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
@@ -1182,8 +1182,8 @@
         font-weight: 500;
         width: 196px;
         color: #fff;
-        border-width: 4px;
-        border-color: #e5e5e5;
+        border-width: 2px;
+        border-color: #1A1A1A;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         border-radius: 24px;
@@ -1197,7 +1197,7 @@
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-width: 4px;
+        border-width: 2px;
         border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
@@ -1212,8 +1212,8 @@
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-width: 4px;
-        border-color: #e5e5e5;
+        border-width: 2px;
+        border-color: #1A1A1A;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         border-radius: 24px;
@@ -1226,7 +1226,7 @@
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
-        border-width: 4px;
+        border-width: 2px;
         border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
@@ -1873,6 +1873,7 @@
     
     .nav-item {
         margin-bottom: 24px;
+        padding: 12px;
         color: #1A1A1A;
         text-transform: uppercase;
         letter-spacing: 0.1em;
@@ -1885,7 +1886,7 @@
     .nav-item:active {
         background-color: #1a1a1a;
         margin-bottom: 24px;
-        padding-left: 12px;
+        padding: 12px;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 0.1em;
@@ -2072,8 +2073,8 @@
         font-weight: 500;
         width: 164px;
         color: #fff;
-        border-width: 4px;
-        border-color: #e5e5e5;
+        border-width: 2px;
+        border-color: #1A1A1A;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         border-radius: 24px;
@@ -2087,7 +2088,7 @@
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-width: 4px;
+        border-width: 2px;
         border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
@@ -2102,8 +2103,8 @@
         line-height: 24px;
         font-size: 14px;
         font-weight: 500;
-        border-width: 4px;
-        border-color: #e5e5e5;
+        border-width: 2px;
+        border-color: #1A1A1A;
         border-style: solid;
         padding: 8px 16px 8px 16px;
         border-radius: 24px;
@@ -2116,7 +2117,7 @@
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
-        border-width: 4px;
+        border-width: 2px;
         border-color: #e5e5e5;
         border-style: solid;
         padding: 8px 16px 8px 16px;
@@ -2484,9 +2485,8 @@
     }
 
     .sertificate {
-        width: 33%;
-        float: left;
-        margin-bottom: 24px;
+        width: 32%;
+        border: 4px double #1A1A1A;
     }
 
     .popup {
@@ -2660,6 +2660,11 @@
         justify-content: space-between;
         padding: 12px 0px 12px 0px;
         border-bottom: 1px solid #1A1A1A;
+    }
+
+    .wrapping {
+        display: block;
+        text-align: center;
     }
  
 }
