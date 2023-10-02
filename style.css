@@ -1323,7 +1323,7 @@
     }
     
     .hero-mobile {
-        background-image: url(resourses/images/hero-picture.jpg);
+        background-image: url(resourses/images/hero.jpeg);
         background-size: cover;
         background-color: #f5f5f5;
         background-position-y: 50%;
@@ -2206,7 +2206,7 @@
         }
     
     .hero-mobile {
-        background-image: url(resourses/images/hero-picture.jpg);
+        background-image: url(resourses/images/hero.jpeg);
         background-size: cover;
         background-color: #f5f5f5;
         background-position-y: 30%;
