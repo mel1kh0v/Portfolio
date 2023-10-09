@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+
+            function changeLanguage() {
+                var select = document.getElementById("language");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Eng") {
+                    window.location.href = "../eng/cases/sparta.html";
+                }
+            }
+
+            function openPopup(imagePath) {
+      var popup = document.getElementById('popup');
+      var popupImage = document.getElementById('popupImage');
+      
+      popupImage.src = imagePath;
+      popup.style.display = 'block';
+    }
+
+    function closePopup(event) {
+      if (event.target === event.currentTarget) {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+      }
+    }
+        </script>
+        <title>Кирилл Мелихов - Продуктовый дизайнер | Портфолио</title>
+    </head>
+    <body>
+
+        <!--Pop-up-->
+
+        <div id="popup" class="popup" onclick="closePopup(event)">
+            <div class="close-btn" onclick="closePopup(event)"></div>
+            <img id="popupImage" src="" alt="" onclick="closePopup(event)">
+        </div>
+        
+
+<!--This is header-->
+        
+    <header>
+        <div id="logo">
+            <a href="../index.html"><img src="../resourses/interface/logo.svg" alt="logo"/></a>
+            <div class="name-container">
+                <p class="name">Kirill Melikhov</p><!--<p class="label">Продуктовый дизайнер</p>-->
+            </div>           
+        </div>
+        <div class="menu-button" tabindex="0" onclick="toggleMenu()"><img src="../resourses/icons/burger-menu.svg" alt="Меню" width="36px" height="auto"></div>
+        <div class="top-nav">
+            <ul>
+                <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><a href="../articles/index.html"><li class="nav-item">Статьи</li></a><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+            </ul>
+            <div class="language">
+                <select name="language" id="language" onchange="changeLanguage()">
+                    <option value="Ru" selected>Ru</option>
+                    <option value="Eng">Eng</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <a href="index.html"><li class="nav-item">Портфолио</li></a><a href="../about.html"><li class="nav-item">Обо мне</li></a><a href="../articles/index.html"><li class="nav-item">Статьи</li></a><a href="../contact.html"><li class="nav-item">Контакты</li></a>
+        </ul>
+        <div class="language">
+            <a href="../eng/cases/sparta.html"><p class="description">English</p></a><a href="sparta.html"><p class="description">Русский</p></a>
+        </div>
+    </div>
+
+<!--Main content-->
+
+<!--Cover image-->
+
+        <section id="project-cover">
+                <img class="mockup" src="../resourses/images/cases/tortuga/mockup.png" alt="" width="100%">
+                <h1 class="project-title">Tortuga Tattoo Workshop</h1>
+        </section>
+
+<!--Project background-->
+
+        <section id="project-review">
+            <div class="container-small">
+                <h2>Обзор проекта</h2>
+                <div class="content">
+                    <h3>О проекте</h3>
+                    <p class="description">Проект "Tortuga Tattoo Workshop" – это захватывающее объединение искусства, стиля и профессионализма, призванное преобразить ваше восприятие татуировки. Давайте погрузимся в детали этого проекта:</p>
+                    <p class="description">Первоочередной задачей было создать виртуальное пространство, которое отражало бы дух тату мастерской. Я разработал креативный и стильный дизайн сайта, учитывая каждую деталь, чтобы каждый посетитель чувствовал себя вдохновленным.</p>
+                    <p class="description">Tortuga – это более чем просто мастерская. Это место, где искусство татуировки принимает новую форму и становится доступным для всех.</p>
+                </div>
+                <div class="content">
+                    <h3>Цели проекта</h3>
+                    <p class="description">Проект "Tortuga Tattoo Workshop" был ориентирован на достижение нескольких ключевых целей:</p>
+                    <p class="description"><b>1. Создание Уникального Онлайн-Пространства:</b> Главной целью было создание виртуального пространства, которое идеально передавало бы атмосферу и стиль "Tortuga Tattoo Workshop". Это включало в себя разработку дизайна сайта, который должен был быть уникальным, стильным и неповторимым.</p>
+                    <p class="description"><b>2. Предоставление Информации и Вдохновения:</b> Проект стремился предоставить посетителям полезную информацию о мастерах и услугах мастерской. Главной целью было также вдохновить клиентов, показав прошлые работы и разнообразие стилей татуировок.</p>
+                    <p class="description"><b>3. Обеспечение Удобства и Оперативности:</b> Создание функционала онлайн-записи на сеансы татуировки было направлено на повышение удобства для клиентов. Цель заключалась в сделать процесс записи быстрым и простым.</p>
+                    <p class="description"><b>4. Повышение Онлайн-Присутствия:</b> Проект стремился увеличить онлайн-присутствие "Tortuga Tattoo Workshop" и привлечь новых клиентов из разных мест.</p>
+                </div>
+            </div>
+        </section>
+
+<!--Case study-->
+
+        <section id="case-study">
+            <div class="container-small">
+                <h3>Процесс дизайна и разработки</h3>
+                <p class="description">Процесс проектирования сайта для "Tortuga Tattoo Workshop" был тщательным и креативным процессом, объединяющим функциональные и эстетические аспекты. Вот несколько этапов этого процесса:</p>
+                <p class="description"><b>Создание бренда:</b> Процесс создания бренда для "Tortuga Tattoo Workshop" начался с глубокого исследования и понимания уникальной идентичности и ценностей. Я стремился не просто разработать сайт, но и создать виртуальное пространство, которое бы идеально отражало атомсферу тату мастерской и становилось незаменимой частью ее бренда.</p>
+                <div class="wrapping">    
+                    <img src="../resourses/images/cases/tortuga/sertificate.jpg" alt="" width="100%" height="auto">    
+                </div>
+                <p class="description"><b>Проектирование Информационной Архитектуры:</b> Я определил структуру сайта, разработав четкий план размещения информации. Главной задачей было обеспечить удобство использования и быстрый доступ к ключевой информации, такой как портфолио мастеров и контактные данные.</p>
+                <img src="../resourses/images/cases/tortuga/ia.jpg" alt="" width="100%" height="auto">
+                <p class="description"><b>Дизайн и интерфейс:</b> Следующим этапом было создание уникального дизайна. Я стремился передать индивидуальность Тортуги через цветовую палитру, шрифты и визуальные элементы. Важным было также обеспечить адаптивность сайта для разных устройств.</p>
+                <img src="../resourses/images/cases/tortuga/visual.png" alt="" width="100%" height="auto">
+                <p class="description"><b>Разработка сайта и интеграция функционала:</b> Процесс начался с ручной верстки сайта с помощью основных языков веб-разработки. В данном случае использовались следующие языки: HTML, CSS, JavaScript и PHP.</p>
+                <span onclick="openPopup('../resourses/images/cases/tortuga/main-flow.jpg')"><img src="../resourses/images/cases/tortuga/main-flow.jpg" alt="" width="100%" height="auto"></span>
+                <p class="description">Я также внедрил функциональность, необходимую для удовлетворения потребностей клиентов. Это включало в себя создание галереи татуировок, форм онлайн-записи на услуги мастерской и консультацию, форм обратной связи и информацию о мастерах.</p>
+                <p class="description"><b>Тестирование и Отладка:</b> Процесс прошел через несколько раундов тестирования, чтобы убедиться в стабильности и правильной работе сайта. Я уделял особое внимание как функциональным, так и дизайнерским аспектам.</p>
+                <p class="description"><b>Запуск и развитие:</b> После успешного завершения тестирования сайт был запущен. Однако проект не закончился на этом этапе. Я продолжаю сотрудничество с "Tortuga Tattoo Workshop" для поддержания и развития сайта, а также для дальнейшего совершенствования онлайн-присутствия.</p>
+                <p class="description">Этот процесс проектирования сайта был воплощением тщательно продуманных решений, внимания к деталям и стремления к созданию онлайн-пространства, которое идеально отражает уникальность и страсть "Tortuga Tattoo Workshop" к искусству татуировки.</p>
+            </div>
+        </section>
+
+<!--Conclusion-->
+
+        <section id="conclusion">
+            <div class="container-small">
+                <h2>Вывод</h2>
+                <p class="description">Результатом проекта "Tortuga Tattoo Workshop" было создание уникального онлайн-пространства, которое не только отражает индивидуальность мастерской, но и обеспечивает клиентам удобство, вдохновение и простой доступ к услугам. Мои усилия в дизайне и разработке позволили создать сайт, который является не просто визитной карточкой Тортуги, а источником вдохновения и связи между мастерами и клиентами.</p>
+            </div>
+        </section>
+
+<!--Footer-->
+
+        <section id="footer">
+            <!--<div class="banner-cta">
+                <h2>Я открыт для сотрудничества</h2>
+                <p class="subheading">Любой путь всегда начинается с первого шага.</br>Так давайте начнем его, с простого слова "Привет"!</p>
+                    <a href="mailto: melikhov.design@gmail.com"><button class="button-cta">Связаться со мной</button></a>
+            </div>-->
+            <div class="sitemap">
+                <div class="social-media">
+                    <a class="icon" href="https://www.instagram.com/melikhov.design" target="_blank"><img class="icon" src="../resourses/icons/instagram.svg" alt="instagram" width="36px" height="36px"></a>
+                    <a class="icon" href="https://www.t.me/produxmel" target="_blank"><img class="icon" src="../resourses/icons/telegram.svg" alt="telegram" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://vk.com/melikhov.design" target="_blank"><img class="icon" src="../resourses/icons/vk.svg" alt="vk" width="36px" height="36px"></a> 
+                    <a class="icon" href="https://www.twitter.com/@melikhov_design" target="_blank"><img class="icon" src="../resourses/icons/twitter.svg" alt="twitter" width="36px" height="36px"></a> 
+                </div>
+            </div>
+            <p class="copy">© Кирилл Мелихов, 2023 г. Все права защищены. </p>
+        </section>
+    </body>
+</html>
